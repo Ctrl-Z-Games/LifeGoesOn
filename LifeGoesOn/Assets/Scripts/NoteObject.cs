@@ -26,7 +26,7 @@ public class NoteObject : MonoBehaviour
                 {
                     ScoreNote.instance.NormalHit();
                 }
-                else if (Math.Ab s(transform.position.x) > 0.05f)     
+                else if (Math.Abs(transform.position.x) > 0.05f)     
                 {
                     ScoreNote.instance.GoodHit();
                 }
