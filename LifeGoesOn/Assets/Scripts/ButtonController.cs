@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class NewBehaviourScript : MonoBehaviour
 {
-    private SpriteRenderer theSR;
-    public Sprite defaultImage;
-    public Sprite pressedImage;
-    public KeyCode keyToPress;
+    // when press the key, the animation will play
+	public Animator anim;	
+	// choose a key to press
+	public KeyCode keyToPress;
     
-    // Start is called before the first frame update
+// Start is called before the first frame update
     void Start()
     {
-        theSR = GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -20,12 +20,11 @@ public class NewBehaviourScript : MonoBehaviour
     {
         if (Input.GetKeyDown(keyToPress))
         {
-            theSR.sprite = pressedImage;
+            anim.Play("BeatBear");
         }
-
-        if (Input.GetKeyUp(keyToPress))
+		if (Input.GetKeyDown(keyToPress))
         {
-            theSR.sprite = defaultImage;
+            anim.Play("BeatBall");
         }
     }
 }
