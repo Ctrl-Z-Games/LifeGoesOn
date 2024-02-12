@@ -427,8 +427,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d883802c6cf24e04a59f971bc5886e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultImage: {fileID: 0}
-  pressedImage: {fileID: 0}
+  anim: {fileID: 0}
   keyToPress: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
