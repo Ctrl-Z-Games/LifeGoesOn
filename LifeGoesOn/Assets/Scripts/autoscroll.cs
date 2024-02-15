@@ -7,7 +7,7 @@ public class autoscroll: MonoBehaviour
     public float speed;
 
     // Update is called once per frame
-    void Update() {
-        transform.Translate(new Vector2(speed, 0));
+    void FixedUpdate() {
+        transform.Translate(new Vector2(speed*0.05f, 0));
     }
 }
