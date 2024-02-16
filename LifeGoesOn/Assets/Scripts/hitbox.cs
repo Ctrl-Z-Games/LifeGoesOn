@@ -7,6 +7,7 @@ public class hitbox : MonoBehaviour
     private float rangePerfect, rangeGood;
     public string playerName = "Player";
     private GameObject player;
+    public KeyCode hitboxKey;
     private int state = 0; // 0 for inactive, 1 for active but not pressed, 2 for inactive and pressed
 
     void Start()
@@ -26,8 +27,8 @@ public class hitbox : MonoBehaviour
             if (dist <= rangeGood) { state = 1; }
         } else if (state == 1)
         {
-            if (dist < rangePerfect && Input.GetKeyDown(KeyCode.F)) { state = 2; Debug.Log("Perfect"); }
-            else if (dist < rangeGood && Input.GetKeyDown(KeyCode.F)) { state = 2; Debug.Log("Good"); }
+            if (dist <= rangePerfect && Input.GetKeyDown(hitboxKey)) { state = 2; Debug.Log("Perfect"); }
+            else if (dist <= rangeGood && Input.GetKeyDown(hitboxKey)) { state = 2; Debug.Log("Good"); }
             else if (dist > rangeGood) { state = 2; Debug.Log("Miss"); }
         }
     }

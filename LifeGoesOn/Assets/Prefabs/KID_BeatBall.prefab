@@ -198,6 +198,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 378dfc63c43fb5647b27fc29089dee22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rangePerfect: 0.8
-  rangeGood: 1
   playerName: Player
+  hitboxKey: 102

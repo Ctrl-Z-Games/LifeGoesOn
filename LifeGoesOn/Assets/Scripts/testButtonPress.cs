@@ -22,7 +22,12 @@ public class testButtonPress : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F))
         {
             GetComponent<SpriteRenderer>().color = Color.red;
-            count = 5;
+            count = 8;
+        }
+
+        if (Input.GetKeyDown(KeyCode.G)) {
+            GetComponent<SpriteRenderer>().color = Color.blue;
+            count = 8;
         }
 
         if (count-- < 0) { count =  0; }
