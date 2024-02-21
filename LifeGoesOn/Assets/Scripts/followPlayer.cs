@@ -5,10 +5,10 @@ using UnityEngine;
 public class followPlayer : MonoBehaviour
 {
     public Transform player;
-    public Vector3 offset;
+    private Vector3 offset = new(3, 1, -5);
 
     // Update is called once per frame
-    void FixedUpdate() {
+    void Update() {
         transform.position = player.position + offset;
     }
 }
