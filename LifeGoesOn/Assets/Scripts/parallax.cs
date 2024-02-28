@@ -23,9 +23,9 @@ public class parallax : MonoBehaviour
                                          transform.position.z);
         ;
 
-        float loopCheck = gameCamera.transform.position.x * (1 - parallaxAmount); // check for looping
-        if (loopCheck > startPos + length) { startPos += length; }
-        else if (loopCheck < startPos - length) { startPos -= length; }
+        //float loopCheck = gameCamera.transform.position.x * (1 - parallaxAmount); // check for looping
+        //if (loopCheck > startPos + length) { startPos += length; }
+        //else if (loopCheck < startPos - length) { startPos -= length; }
         count += 0.05f;
     }
 }

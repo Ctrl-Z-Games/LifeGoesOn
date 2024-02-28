@@ -266,8 +266,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   horizontalSpaceMod: 4
   mapFile: {fileID: 4900000, guid: 9a2329c90cc430449a9780a5bc1e672b, type: 3}
-  hitboxPrefab1: {fileID: 2088865899580925431, guid: 091dae3fc11bad441bf33306cd7a0435, type: 3}
-  hitboxPrefab2: {fileID: 1136534918668619200, guid: 4d6fd78d10be8b74da956d688a02153a, type: 3}
+  hitboxPrefab1: {fileID: 2088865899580925431, guid: d274af8a53a58428486f979be2f2940e, type: 3}
+  hitboxPrefab2: {fileID: 1136534918668619200, guid: ebb4a29f8b84847dd9db90be58e274a4, type: 3}
 --- !u!1 &410797995
 GameObject:
   m_ObjectHideFlags: 0

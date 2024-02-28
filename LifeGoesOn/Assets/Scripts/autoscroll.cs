@@ -5,9 +5,14 @@ using UnityEngine;
 public class autoscroll: MonoBehaviour
 {
     public float speed;
+    public bool hasStarted;
 
     // Update is called once per frame
     void FixedUpdate() {
-        transform.Translate(new Vector2(speed*0.05f, 0));
+        if (hasStarted)
+        {
+            transform.Translate(new Vector2(speed*0.05f, 0));
+        }
+        
     }
 }

@@ -5,17 +5,16 @@ using UnityEngine;
 public class NoteObject : MonoBehaviour
 {
 	public bool canBePressed;
-    
 	public KeyCode keyToPress;
     public GameObject player;
-
 	private float distanceBetweenObjects;
-
-	public Animator anim; 
+    public GameObject fail, ok, good, perfect;
+    private Vector3 yDistance = new Vector3(0, 2f, 0);
+	//public Animator anim; 
     // Start is called before the first frame update
     void Start()
     {
-        anim = GetComponent<Animator>();
+        
     }
 
     // Update is called once per frame
@@ -25,34 +24,21 @@ public class NoteObject : MonoBehaviour
         {
             if(canBePressed)
             {	
-	            anim.Play("Beat");	
-                distanceBetweenObjects = transform.position.x - player.transform.position.x;
-				//gameObject.SetActive(false);
+                gameObject.SetActive(false);
                 
-                // if the x distance between the player and the note is less than 0.5, then it's a perfect hit
+                distanceBetweenObjects = transform.position.x - player.transform.position.x;
                 if (Mathf.Abs(distanceBetweenObjects) < 0.25)
                 {
-                    
-					anim.Play("Perfect");
-					Debug.Log("Perfect Hit"); // replace with perfect hit animation
-                    //currentScore += scorePerPerfectNote;
-	
-					// after the animation is done, set the gameobject to inactive
-					
-                } 
-                else if (Mathf.Abs(distanceBetweenObjects) < 0.5)
+                    GameManager.instance.PerfectHit();  
+                } else if (Mathf.Abs(distanceBetweenObjects) < 0.5)
                 {
-                    anim.Play("Good");
-					//gameObject.SetActive(false);
-					Debug.Log("Good Hit"); // replace with good hit animation
-                    //currentScore += scorePerGoodNote;
+                    GameManager.instance.GoodHit();
                 } else
                 {
-	                anim.Play("OK");	
-                    //gameObject.SetActive(false);
-					Debug.Log("OK Hit"); // replace with ok hit animation
-                    //currentScore += scorePerOKNote;
+                    GameManager.instance.OkHit();
                 }
+                
+                
             } 
         }
     }
@@ -70,11 +56,11 @@ public class NoteObject : MonoBehaviour
         if(other.tag == "Player")
         {
             canBePressed = false;
-            Debug.Log("Missed Note"); // replace with missed note animation
-			//
-			
+            //gameObject.SetActive(false);
+            //Instantiate(fail, transform.position + yDistance, Quaternion.identity);
+            GameManager.instance.FailHit();
+            
 	
-			
         }
     }
 }
