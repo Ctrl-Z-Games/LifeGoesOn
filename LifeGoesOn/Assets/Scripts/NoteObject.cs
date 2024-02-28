@@ -29,13 +29,16 @@ public class NoteObject : MonoBehaviour
                 distanceBetweenObjects = transform.position.x - player.transform.position.x;
                 if (Mathf.Abs(distanceBetweenObjects) < 0.25)
                 {
-                    GameManager.instance.PerfectHit();  
+                    GameManager.instance.PerfectHit();
+                    Instantiate(perfect, transform.position + yDistance, Quaternion.identity);
                 } else if (Mathf.Abs(distanceBetweenObjects) < 0.5)
                 {
                     GameManager.instance.GoodHit();
+                    Instantiate(good, transform.position + yDistance, Quaternion.identity);
                 } else
                 {
                     GameManager.instance.OkHit();
+                    Instantiate(ok, transform.position + yDistance, Quaternion.identity);
                 }
                 
                 
@@ -56,7 +59,7 @@ public class NoteObject : MonoBehaviour
         if(other.tag == "Player")
         {
             canBePressed = false;
-            //gameObject.SetActive(false);
+            gameObject.SetActive(false);
             //Instantiate(fail, transform.position + yDistance, Quaternion.identity);
             GameManager.instance.FailHit();
             
