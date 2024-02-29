@@ -7,7 +7,7 @@ public class placeInMap : MonoBehaviour
 {
     public float horizontalSpaceMod;
     public TextAsset mapFile;
-    public GameObject qHitbox, pHitbox;
+    public GameObject qHitbox, pHitbox, spceHitbox;
 
     private GameObject obj;
     private string map = "0";
@@ -21,10 +21,16 @@ public class placeInMap : MonoBehaviour
                 case 0:
                     break;
 
-                case 1: // bottom
+                case 1: // bottom Q
                     obj = Instantiate(qHitbox, transform);
                     obj.transform.position = transform.position + new Vector3(i * horizontalSpaceMod, 0.0f);
                     obj.GetComponent<NoteObject>().setKeyToPress(KeyCode.Q);
+                    break;
+                
+                case 4: // bottom P
+                    obj = Instantiate(pHitbox, transform);
+                    obj.transform.position = transform.position + new Vector3(i * horizontalSpaceMod, 0.0f);
+                    obj.GetComponent<NoteObject>().setKeyToPress(KeyCode.P);
                     break;
 
                 case 2: // top
@@ -41,6 +47,12 @@ public class placeInMap : MonoBehaviour
                     obj = Instantiate(qHitbox, transform);
                     obj.transform.position = transform.position + new Vector3(i * horizontalSpaceMod, 2.0f);
                     obj.GetComponent<NoteObject>().setKeyToPress(KeyCode.P);
+                    break;
+                
+                case 6: // Space Hitbox
+                    obj = Instantiate(spceHitbox, transform);
+                    obj.transform.position = transform.position + new Vector3(i * horizontalSpaceMod, 0.0f);
+                    obj.GetComponent<NoteObject>().setKeyToPress(KeyCode.Space);
                     break;
             }
         }
