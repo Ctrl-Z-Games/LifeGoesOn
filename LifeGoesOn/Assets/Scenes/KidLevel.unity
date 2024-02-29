@@ -211,9 +211,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   folderPath: Assets/Kidlevel/Dialogue
-  levelName: KID
+  levelName: Kid
   spritePrefab: {fileID: 6925532381695245283, guid: b70dff9dd249e4e4782f1d103c7abf65, type: 3}
-  space: 15
+  space: 20
 --- !u!1 &410797995
 GameObject:
   m_ObjectHideFlags: 0

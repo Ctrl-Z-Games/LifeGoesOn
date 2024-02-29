@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 153780892}
   - component: {fileID: 153780891}
   - component: {fileID: 153780893}
+  - component: {fileID: 153780894}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -197,6 +198,22 @@ MonoBehaviour:
   qHitbox: {fileID: 938355421853283879, guid: 4c6877b7047484ebba6204c035fb8066, type: 3}
   pHitbox: {fileID: 4289645183788825751, guid: fbbf26d63fe654b348486eb75c2dd596, type: 3}
   spceHitbox: {fileID: 0}
+--- !u!114 &153780894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153780890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e8b7dc1f36fe604c9c2cb804a034443, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  folderPath: Assets/BabyLevel/Dialogue
+  levelName: Baby
+  spritePrefab: {fileID: 6925532381695245283, guid: b70dff9dd249e4e4782f1d103c7abf65, type: 3}
+  space: 25
 --- !u!1 &377471601
 GameObject:
   m_ObjectHideFlags: 0
