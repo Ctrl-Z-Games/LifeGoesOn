@@ -52,7 +52,7 @@ public class placeInMap : MonoBehaviour
                 case 6: // Space Hitbox
                     obj = Instantiate(spceHitbox, transform);
                     obj.transform.position = transform.position + new Vector3(i * horizontalSpaceMod, 2.0f);
-                    obj.GetComponent<NoteObject>().setKeyToPress(KeyCode.Space);
+                    obj.GetComponent<NoteObject>().setKeyToPress(KeyCode.Space); 
                     break;
             }
         }
