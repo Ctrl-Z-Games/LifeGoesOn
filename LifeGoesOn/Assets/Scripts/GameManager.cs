@@ -6,18 +6,30 @@ public class GameManager : MonoBehaviour
 {
     public AudioSource backgroundMusic;
     public bool isGameActive;
-    public autoscroll playerScroll;
     public static GameManager instance;
     public int currentScore;
     public int OkHitScore = 1;
     public int GoodHitScore = 2;
     public int PerfectHitScore = 3;
     public int FailHitScore = -1;
+    public GameObject accuracyPrefab;
+    public Sprite fail, ok, good, perfect;
+
+    private GameObject accuracyObj;
+    private GameObject player;
+    private SpriteRenderer accSR;
+    private int timer;
     
     // Start is called before the first frame update
     void Start()
     {
-        instance = this; 
+        instance = this;
+        player = GameObject.Find("Player");
+        accuracyObj = Instantiate(accuracyPrefab, player.transform);
+        accuracyObj.transform.position = player.transform.position + new Vector3(0f, 2f);
+        accuracyObj.SetActive(false);
+        accSR = accuracyObj.GetComponent<SpriteRenderer>();
+        timer = 0;
     }
 
     // Update is called once per frame
@@ -28,30 +40,48 @@ public class GameManager : MonoBehaviour
             if (Input.anyKeyDown)
             {
                 isGameActive = true;
-                //playerScroll.hasStarted = true;
+                player.GetComponent<autoscroll>().hasStarted = true;
                 
                 backgroundMusic.Play();
             }
         }
+
+        if (timer++ == 300) {
+            accuracyObj.SetActive(false);
+            timer = 0;
+        }
     }
+
     public void OkHit()
     {
         Debug.Log("OK Hit");
         currentScore += OkHitScore;
+        accuracyObj.SetActive(true);
+        timer = 0;
+        accSR.sprite = ok;
     }
     public void GoodHit()
     {
         Debug.Log("Good Hit");
         currentScore += GoodHitScore;
+        accuracyObj.SetActive(true);
+        timer = 0;
+        accSR.sprite = good;
     }
     public void PerfectHit()
     {
         Debug.Log("Perfect Hit");
         currentScore += PerfectHitScore;
+        accuracyObj.SetActive(true);
+        timer = 0;
+        accSR.sprite = perfect;
     } 
     public void FailHit()
     {
         Debug.Log("Fail Hit");
         currentScore += FailHitScore;
+        accuracyObj.SetActive(true);
+        timer = 0;
+        accSR.sprite = fail;
     }
 }

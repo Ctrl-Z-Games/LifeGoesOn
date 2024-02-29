@@ -186,13 +186,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   backgroundMusic: {fileID: 0}
-  isGameActive: 0
-  playerScroll: {fileID: 0}
+  isGameActive: 1
   currentScore: 0
   OkHitScore: 1
   GoodHitScore: 2
   PerfectHitScore: 3
   FailHitScore: -1
+  accuracyPrefab: {fileID: 6148598675620483694, guid: 106775ee378510242b94933d9d4d8e74, type: 3}
+  fail: {fileID: 21300000, guid: bf19882b0743f4a5b9b65c9a683be538, type: 3}
+  ok: {fileID: 21300000, guid: c053a11f4842848dd8d74987d173571a, type: 3}
+  good: {fileID: 21300000, guid: 474801bd51cad4197a8d4e43e066176f, type: 3}
+  perfect: {fileID: 21300000, guid: 5eb30aafd7a77426baa680d486342a66, type: 3}
 --- !u!114 &372468777
 MonoBehaviour:
   m_ObjectHideFlags: 0
