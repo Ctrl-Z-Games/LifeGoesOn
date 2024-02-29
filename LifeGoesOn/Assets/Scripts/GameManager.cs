@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
             if (Input.anyKeyDown)
             {
                 isGameActive = true;
-                playerScroll.hasStarted = true;
+                //playerScroll.hasStarted = true;
                 
                 backgroundMusic.Play();
             }

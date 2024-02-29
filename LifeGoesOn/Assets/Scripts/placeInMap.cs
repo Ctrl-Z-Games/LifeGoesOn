@@ -7,8 +7,9 @@ public class placeInMap : MonoBehaviour
 {
     public float horizontalSpaceMod;
     public TextAsset mapFile;
-    public GameObject hitboxPrefab1;
-    public GameObject hitboxPrefab2;
+    public GameObject qHitbox, pHitbox;
+
+    private GameObject obj;
     private string map = "0";
 
     // Start is called before the first frame update
@@ -19,17 +20,27 @@ public class placeInMap : MonoBehaviour
             switch (mapCode) { // instantiates new hitbox and set it's position
                 case 0:
                     break;
+
                 case 1: // bottom
-                    Instantiate(hitboxPrefab1, transform).transform.position = transform.position + new Vector3(i * horizontalSpaceMod, 0.0f);
+                    obj = Instantiate(qHitbox, transform);
+                    obj.transform.position = transform.position + new Vector3(i * horizontalSpaceMod, 0.0f);
+                    obj.GetComponent<NoteObject>().setKeyToPress(KeyCode.Q);
                     break;
+
                 case 2: // top
-                    Instantiate(hitboxPrefab2, transform).transform.position = transform.position + new Vector3(i * horizontalSpaceMod, 2.0f);
+                    obj = Instantiate(pHitbox, transform);
+                    obj.transform.position = transform.position + new Vector3(i * horizontalSpaceMod, 2.0f);
+                    obj.GetComponent<NoteObject>().setKeyToPress(KeyCode.P);
                     break;
+
                 case 3: // both
-                    Instantiate(hitboxPrefab1, transform) // instantiate new hitbox and set it's position
-                        .transform.position = transform.position + new Vector3(i * horizontalSpaceMod, 0.0f);
-                    Instantiate(hitboxPrefab2, transform) // instantiate new hitbox and set it's position
-                        .transform.position = transform.position + new Vector3(i * horizontalSpaceMod, 2.0f);
+                    obj = Instantiate(qHitbox, transform);
+                    obj.transform.position = transform.position + new Vector3(i * horizontalSpaceMod, 0.0f);
+                    obj.GetComponent<NoteObject>().setKeyToPress(KeyCode.Q);
+
+                    obj = Instantiate(qHitbox, transform);
+                    obj.transform.position = transform.position + new Vector3(i * horizontalSpaceMod, 2.0f);
+                    obj.GetComponent<NoteObject>().setKeyToPress(KeyCode.P);
                     break;
             }
         }
