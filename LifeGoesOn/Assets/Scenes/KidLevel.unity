@@ -210,8 +210,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e8b7dc1f36fe604c9c2cb804a034443, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  folderPath: Assets/Kidlevel/Dialogue
-  levelName: Kid
+  dialogs:
+  - {fileID: 21300000, guid: 3c381a095def46849964da4157960d5c, type: 3}
+  - {fileID: 21300000, guid: 54a9768c4a72733469f9bfd3b5e4743d, type: 3}
+  - {fileID: 21300000, guid: ca9945dd66799f746adf0583dde5b1ce, type: 3}
+  - {fileID: 21300000, guid: 48b4230216086e64ca12de73263039ee, type: 3}
+  - {fileID: 21300000, guid: 2acb4f642f026884ab479ecec9072f37, type: 3}
+  - {fileID: 21300000, guid: f2f71896ca4057148b0c8cf8321ddb0e, type: 3}
+  - {fileID: 21300000, guid: 21fb4c57c0ea9ad4b9263bb79159d2ab, type: 3}
+  - {fileID: 21300000, guid: a609fab0e1f6c5d4e927857ad6443a5f, type: 3}
   spritePrefab: {fileID: 6925532381695245283, guid: b70dff9dd249e4e4782f1d103c7abf65, type: 3}
   space: 20
 --- !u!1 &410797995
