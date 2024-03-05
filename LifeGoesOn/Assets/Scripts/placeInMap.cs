@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class placeInMap : MonoBehaviour
@@ -29,13 +26,13 @@ public class placeInMap : MonoBehaviour
                 
                 case 4: // bottom P
                     obj = Instantiate(pHitbox, transform);
-                    obj.transform.position = transform.position + new Vector3(i * horizontalSpaceMod, 0.0f);
+                    obj.transform.position = transform.position + new Vector3(i * horizontalSpaceMod, 0.0f, 0.02f);
                     obj.GetComponent<NoteObject>().setKeyToPress(KeyCode.P);
                     break;
 
                 case 2: // top
                     obj = Instantiate(pHitbox, transform);
-                    obj.transform.position = transform.position + new Vector3(i * horizontalSpaceMod, 2.0f);
+                    obj.transform.position = transform.position + new Vector3(i * horizontalSpaceMod, 2.0f, 0.1f);
                     obj.GetComponent<NoteObject>().setKeyToPress(KeyCode.P);
                     break;
 
@@ -44,15 +41,15 @@ public class placeInMap : MonoBehaviour
                     obj.transform.position = transform.position + new Vector3(i * horizontalSpaceMod, 0.0f);
                     obj.GetComponent<NoteObject>().setKeyToPress(KeyCode.Q);
 
-                    obj = Instantiate(qHitbox, transform);
-                    obj.transform.position = transform.position + new Vector3(i * horizontalSpaceMod, 2.0f);
+                    obj = Instantiate(pHitbox, transform);
+                    obj.transform.position = transform.position + new Vector3(i * horizontalSpaceMod, 2.0f, 0.02f);
                     obj.GetComponent<NoteObject>().setKeyToPress(KeyCode.P);
                     break;
                 
                 case 6: // Space Hitbox
                     obj = Instantiate(spceHitbox, transform);
-                    obj.transform.position = transform.position + new Vector3(i * horizontalSpaceMod, 0.0f);
-                    obj.GetComponent<NoteObject>().setKeyToPress(KeyCode.Space);
+                    obj.transform.position = transform.position + new Vector3(i * horizontalSpaceMod, 2.0f);
+                    obj.GetComponent<NoteObject>().setKeyToPress(KeyCode.Space); 
                     break;
             }
         }
