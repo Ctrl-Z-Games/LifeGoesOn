@@ -194,7 +194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a83b62e4311b6c4bb73ad495112ba63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  horizontalSpaceMod: 1.37
+  horizontalSpaceMod: 2.74
   mapFile: {fileID: 4900000, guid: a3bb121cc42f44704842263f9d069a9a, type: 3}
   qHitbox: {fileID: 938355421853283879, guid: 4c6877b7047484ebba6204c035fb8066, type: 3}
   pHitbox: {fileID: 4289645183788825751, guid: fbbf26d63fe654b348486eb75c2dd596, type: 3}
@@ -711,7 +711,6 @@ GameObject:
   - component: {fileID: 1203494842}
   - component: {fileID: 1203494841}
   - component: {fileID: 1203494843}
-  - component: {fileID: 1203494844}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -883,19 +882,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1203494844
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1203494837}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1bd8cbdb9b9586e43ad62c9ce40face1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 3
 --- !u!1 &1314411849
 GameObject:
   m_ObjectHideFlags: 0
