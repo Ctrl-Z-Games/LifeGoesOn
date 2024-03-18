@@ -25,13 +25,13 @@ public class NoteObject : MonoBehaviour
             if (Input.GetKeyDown(keyToPress)) {
                 if (Mathf.Abs(distanceBetweenObjects) < 0.25) {
                     GameManager.instance.PerfectHit();
-                    anim.Play("clicked");
+                    anim.Play("clicked", 0, 0);
                 } else if (Mathf.Abs(distanceBetweenObjects) < 0.5) {
                     GameManager.instance.GoodHit();
-                    anim.Play("clicked");
+                    anim.Play("clicked", 0, 0);
                 } else if (Mathf.Abs(distanceBetweenObjects) < 1.0) {
                     GameManager.instance.OkHit();
-                    anim.Play("clicked");
+                    anim.Play("clicked", 0, 0);
                 }
                 pressedState = 2;
             }
@@ -41,6 +41,11 @@ public class NoteObject : MonoBehaviour
 
         if (pressedState == 3) { GameManager.instance.FailHit(); pressedState = 2; }
     }
+
+    public void EndAnim() {
+        gameObject.SetActive(false);
+    }
+
 
     // detect if the player object is in the hitbox area, if so, player can press the key
     private void OnTriggerEnter2D(Collider2D other) {
