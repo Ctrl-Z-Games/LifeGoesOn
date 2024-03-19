@@ -7,9 +7,9 @@ public class bpmfinder : MonoBehaviour
     public KeyCode key;
     private GameObject player;
     public GameObject prefab;
-    private float prev = 0f;
-    private float avg = 0f;
-    private int total = 0;
+    //private float prev = 0f;
+    //private float avg = 0f;
+    //private int total = 0;
 
     // Start is called before the first frame update
     void Start()

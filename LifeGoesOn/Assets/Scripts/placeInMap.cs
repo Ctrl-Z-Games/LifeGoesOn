@@ -4,7 +4,7 @@ public class placeInMap : MonoBehaviour
 {
     public float horizontalSpaceMod;
     public TextAsset mapFile;
-    public GameObject qHitbox, pHitbox, spceHitbox;
+    public GameObject qHitbox, pHitbox;
 
     private GameObject obj;
     private string map = "0";
@@ -20,36 +20,24 @@ public class placeInMap : MonoBehaviour
 
                 case 1: // bottom Q
                     obj = Instantiate(qHitbox, transform);
-                    obj.transform.position = transform.position + new Vector3(i * horizontalSpaceMod, 0.0f);
-                    obj.GetComponent<NoteObject>().setKeyToPress(KeyCode.Q);
-                    break;
-                
-                case 4: // bottom P
-                    obj = Instantiate(pHitbox, transform);
-                    obj.transform.position = transform.position + new Vector3(i * horizontalSpaceMod, 0.0f, 0.02f);
-                    obj.GetComponent<NoteObject>().setKeyToPress(KeyCode.P);
+                    obj.transform.position = transform.position + new Vector3(i * horizontalSpaceMod, 0.4f);
+                    obj.AddComponent<NoteObject>().setKeyToPress(KeyCode.Q);
                     break;
 
-                case 2: // top
+                case 2: // top P
                     obj = Instantiate(pHitbox, transform);
-                    obj.transform.position = transform.position + new Vector3(i * horizontalSpaceMod, 2.0f, 0.1f);
-                    obj.GetComponent<NoteObject>().setKeyToPress(KeyCode.P);
-                    break;
-
-                case 3: // both
-                    obj = Instantiate(qHitbox, transform);
-                    obj.transform.position = transform.position + new Vector3(i * horizontalSpaceMod, 0.0f);
-                    obj.GetComponent<NoteObject>().setKeyToPress(KeyCode.Q);
-
-                    obj = Instantiate(pHitbox, transform);
-                    obj.transform.position = transform.position + new Vector3(i * horizontalSpaceMod, 2.0f, 0.02f);
-                    obj.GetComponent<NoteObject>().setKeyToPress(KeyCode.P);
-                    break;
-                
-                case 6: // Space Hitbox
-                    obj = Instantiate(spceHitbox, transform);
                     obj.transform.position = transform.position + new Vector3(i * horizontalSpaceMod, 2.0f);
-                    obj.GetComponent<NoteObject>().setKeyToPress(KeyCode.Space); 
+                    obj.AddComponent<NoteObject>().setKeyToPress(KeyCode.P);
+                    break;
+
+                case 3: // both Q + P
+                    obj = Instantiate(qHitbox, transform);
+                    obj.transform.position = transform.position + new Vector3(i * horizontalSpaceMod, 0.4f);
+                    obj.AddComponent<NoteObject>().setKeyToPress(KeyCode.Q);
+
+                    obj = Instantiate(pHitbox, transform);
+                    obj.transform.position = transform.position + new Vector3(i * horizontalSpaceMod, 2.0f);
+                    obj.AddComponent<NoteObject>().setKeyToPress(KeyCode.P);
                     break;
             }
         }
