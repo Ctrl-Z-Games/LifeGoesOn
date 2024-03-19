@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 8689765132454014767}
   - component: {fileID: 8434378420894590754}
   - component: {fileID: 4035202527291878614}
-  - component: {fileID: 2418657141568058812}
   - component: {fileID: 4921856161714044249}
   m_Layer: 0
   m_Name: KID_BeatBall
@@ -30,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 4514070372983678345}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.119939566, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -147,21 +146,9 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.015800118, y: -0.20295668}
-  m_Size: {x: 1.4777374, y: 2.3338447}
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 1.84, y: 2.4}
   m_Direction: 0
---- !u!114 &2418657141568058812
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4514070372983678345}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14d4759ed2d124b1aabf10e0541c95c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!95 &4921856161714044249
 Animator:
   serializedVersion: 5

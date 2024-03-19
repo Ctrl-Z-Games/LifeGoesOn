@@ -6,11 +6,12 @@ public class NoteObject : MonoBehaviour
 {
 	private int pressedState = 0;
     private KeyCode keyToPress;
-	private Animator anim;
+	private Animator anim, shadowAnim;
     private Collider2D player;
 
     private void Start() {
         anim = GetComponent<Animator>();
+        shadowAnim = transform.GetChild(0).GetComponent<Animator>();
     }
 
     public void setKeyToPress(KeyCode key) {
@@ -26,12 +27,16 @@ public class NoteObject : MonoBehaviour
                 if (Mathf.Abs(distanceBetweenObjects) < 0.25) {
                     GameManager.instance.PerfectHit();
                     anim.Play("clicked", 0, 0);
+                    shadowAnim.Play("clicked", 0, 0);
                 } else if (Mathf.Abs(distanceBetweenObjects) < 0.5) {
                     GameManager.instance.GoodHit();
                     anim.Play("clicked", 0, 0);
-                } else if (Mathf.Abs(distanceBetweenObjects) < 1.0) {
+                    shadowAnim.Play("clicked", 0, 0);
+                }
+                else if (Mathf.Abs(distanceBetweenObjects) < 1.0) {
                     GameManager.instance.OkHit();
                     anim.Play("clicked", 0, 0);
+                    shadowAnim.Play("clicked", 0, 0);
                 }
                 pressedState = 2;
             }

@@ -169,11 +169,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a83b62e4311b6c4bb73ad495112ba63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  horizontalSpaceMod: 1.37
-  mapFile: {fileID: 4900000, guid: 98b907bd0a131004288c60433829b7ed, type: 3}
-  qHitbox: {fileID: 4514070372983678345, guid: d274af8a53a58428486f979be2f2940e, type: 3}
-  pHitbox: {fileID: 2303594689237081482, guid: ebb4a29f8b84847dd9db90be58e274a4, type: 3}
-  spceHitbox: {fileID: 445169759024041216, guid: 1cae4ed098dda8a42be2d5d8022b432d, type: 3}
+  horizontalSpaceMod: 5.54
+  mapFile: {fileID: 4900000, guid: 9a2329c90cc430449a9780a5bc1e672b, type: 3}
+  qHitbox: {fileID: 7861901813682168695, guid: d5d7431b302b2c84e8a2d9c2aa8ec06a, type: 3}
+  pHitbox: {fileID: 7836904469303024619, guid: 1354a271c9025884691a33106a495209, type: 3}
 --- !u!114 &372468776
 MonoBehaviour:
   m_ObjectHideFlags: 0
