@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public AudioSource backgroundMusic;
+    public AudioSource neutralMusic;
+    public AudioSource happyMusic;
+    public AudioSource sadMusic;
     public bool isGameActive;
     public static GameManager instance;
     public int currentScore;
@@ -30,6 +32,7 @@ public class GameManager : MonoBehaviour
         accuracyObj.SetActive(false);
         accSR = accuracyObj.GetComponent<SpriteRenderer>();
         timer = 0;
+        //currentScore = 0;
     }
 
     // Update is called once per frame
@@ -42,7 +45,9 @@ public class GameManager : MonoBehaviour
                 isGameActive = true;
                 player.GetComponent<autoscroll>().hasStarted = true;
                 
-                backgroundMusic.Play();
+                neutralMusic.Play();
+                //happyMusic.Play();
+                //sadMusic.Play();
             }
         }
 
@@ -59,6 +64,8 @@ public class GameManager : MonoBehaviour
         accuracyObj.SetActive(true);
         timer = 0;
         accSR.sprite = ok;
+        currentScore += OkHitScore;
+        Debug.Log(currentScore);
     }
     public void GoodHit()
     {
@@ -67,6 +74,8 @@ public class GameManager : MonoBehaviour
         accuracyObj.SetActive(true);
         timer = 0;
         accSR.sprite = good;
+        currentScore += GoodHitScore;
+        Debug.Log(currentScore);
     }
     public void PerfectHit()
     {
@@ -75,6 +84,8 @@ public class GameManager : MonoBehaviour
         accuracyObj.SetActive(true);
         timer = 0;
         accSR.sprite = perfect;
+        currentScore += PerfectHitScore;
+        Debug.Log(currentScore);
     } 
     public void FailHit()
     {
@@ -83,5 +94,7 @@ public class GameManager : MonoBehaviour
         accuracyObj.SetActive(true);
         timer = 0;
         accSR.sprite = fail;
+        currentScore += FailHitScore;
+        Debug.Log(currentScore);
     }
 }
