@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public AudioSource backgroundMusic;
+    public AudioSource neutralMusic;
+    public AudioSource happyMusic;
+    public AudioSource sadMusic;
     public bool isGameActive;
     public static GameManager instance;
     public int currentScore;
@@ -30,7 +32,7 @@ public class GameManager : MonoBehaviour
         accuracyObj.SetActive(false);
         accSR = accuracyObj.GetComponent<SpriteRenderer>();
         timer = 0;
-        currentScore = 0;
+        //currentScore = 0;
     }
 
     // Update is called once per frame
@@ -43,7 +45,9 @@ public class GameManager : MonoBehaviour
                 isGameActive = true;
                 player.GetComponent<autoscroll>().hasStarted = true;
                 
-                backgroundMusic.Play();
+                neutralMusic.Play();
+                //happyMusic.Play();
+                //sadMusic.Play();
             }
         }
 
