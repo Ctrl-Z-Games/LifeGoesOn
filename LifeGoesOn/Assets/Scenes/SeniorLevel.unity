@@ -195,11 +195,11 @@ MonoBehaviour:
   PerfectHitScore: 3
   FailHitScore: -1
   accuracyPrefab: {fileID: 6148598675620483694, guid: 106775ee378510242b94933d9d4d8e74, type: 3}
-  accuracyHeight: 2
-  fail: {fileID: 0}
-  ok: {fileID: 0}
-  good: {fileID: 0}
-  perfect: {fileID: 0}
+  accuracyHeight: 2.5
+  fail: {fileID: 21300000, guid: b47f6eb63ab1aea40a0b372b31bb58d3, type: 3}
+  ok: {fileID: 21300000, guid: d3fb7a2580a784446be8058f572d31ae, type: 3}
+  good: {fileID: 21300000, guid: 3beb2ac34d1e25c49a68479ac89b2b15, type: 3}
+  perfect: {fileID: 21300000, guid: 2575659dc3a8931409300871e9455a4a, type: 3}
 --- !u!114 &372468777
 MonoBehaviour:
   m_ObjectHideFlags: 0
