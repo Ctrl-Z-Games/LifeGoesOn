@@ -208,7 +208,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 372468773}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e8b7dc1f36fe604c9c2cb804a034443, type: 3}
   m_Name: 
@@ -220,9 +220,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 1f5cc2dfda7dd4e72afd4b2acd233894, type: 3}
   - {fileID: 21300000, guid: 5885758ffcd73453995faa5e44894efd, type: 3}
   - {fileID: 21300000, guid: fdd2d2c1bfe3344529a3c02de35b327b, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  spritePrefab: {fileID: 0}
+  spritePrefab: {fileID: 6925532381695245283, guid: b70dff9dd249e4e4782f1d103c7abf65, type: 3}
   space: 20
 --- !u!212 &372468779
 SpriteRenderer:

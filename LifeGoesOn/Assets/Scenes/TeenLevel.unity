@@ -207,21 +207,19 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 372468773}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e8b7dc1f36fe604c9c2cb804a034443, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogs:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  spritePrefab: {fileID: 0}
+  - {fileID: 21300000, guid: b11c8cb1b05ed4f6a943d630dfb782df, type: 3}
+  - {fileID: 21300000, guid: 3773be813b5bf438384405161a8c9bd5, type: 3}
+  - {fileID: 21300000, guid: 01b9ac457054a4b21a95c417796e42e5, type: 3}
+  - {fileID: 21300000, guid: af3aa91fc8ded4406aea631f000afa4a, type: 3}
+  - {fileID: 21300000, guid: c6282494f772847fd873213a4278e4e2, type: 3}
+  - {fileID: 21300000, guid: a9c4f312ffbbb44cbaee7437f31dc131, type: 3}
+  spritePrefab: {fileID: 6925532381695245283, guid: b70dff9dd249e4e4782f1d103c7abf65, type: 3}
   space: 20
 --- !u!1 &410797995
 GameObject:
