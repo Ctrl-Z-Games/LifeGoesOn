@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     public int PerfectHitScore = 3;
     public int FailHitScore = -1;
     public GameObject accuracyPrefab;
+    public float accuracyHeight = 2.0f;
     public Sprite fail, ok, good, perfect;
 
     private GameObject accuracyObj;
@@ -28,7 +29,7 @@ public class GameManager : MonoBehaviour
         instance = this;
         player = GameObject.Find("Player");
         accuracyObj = Instantiate(accuracyPrefab, player.transform);
-        accuracyObj.transform.position = player.transform.position + new Vector3(0f, 2f);
+        accuracyObj.transform.position = player.transform.position + new Vector3(0f, accuracyHeight);
         accuracyObj.SetActive(false);
         accSR = accuracyObj.GetComponent<SpriteRenderer>();
         timer = 0;

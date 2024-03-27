@@ -195,6 +195,7 @@ MonoBehaviour:
   PerfectHitScore: 3
   FailHitScore: -1
   accuracyPrefab: {fileID: 6148598675620483694, guid: 106775ee378510242b94933d9d4d8e74, type: 3}
+  accuracyHeight: 2.5
   fail: {fileID: 21300000, guid: 6223bdcc0396b4309a0c4893f540da90, type: 3}
   ok: {fileID: 21300000, guid: 3af71546718ff45f2a613fae1f5d9b17, type: 3}
   good: {fileID: 21300000, guid: d9b4abf032e1d47a49d7a0e9bb7f9764, type: 3}
