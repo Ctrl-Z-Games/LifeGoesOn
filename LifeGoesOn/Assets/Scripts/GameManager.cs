@@ -45,6 +45,7 @@ public class GameManager : MonoBehaviour
             {
                 isGameActive = true;
                 player.GetComponent<autoscroll>().hasStarted = true;
+                GetComponent<placeDialogue>().enabled = true;
                 
                 neutralMusic.Play();
                 //happyMusic.Play();

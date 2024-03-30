@@ -219,7 +219,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: c1229081f72006540a6649d0b2227f7b, type: 3}
   - {fileID: 21300000, guid: 0a71831146286f24199742ec374eae4f, type: 3}
   spritePrefab: {fileID: 6925532381695245283, guid: b70dff9dd249e4e4782f1d103c7abf65, type: 3}
-  space: 20
+  space: 15
+  speed: 0.005
+  enabled: 0
 --- !u!1 &410797995
 GameObject:
   m_ObjectHideFlags: 0
