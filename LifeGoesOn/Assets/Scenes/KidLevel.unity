@@ -185,9 +185,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79ead8c9014984fa3ad921c0917f8796, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  neutralMusic: {fileID: 778581068}
+  neutralMusic: {fileID: 507634228}
   happyMusic: {fileID: 507634228}
-  sadMusic: {fileID: 1679984720}
+  sadMusic: {fileID: 507634228}
   isGameActive: 0
   currentScore: 0
   OkHitScore: 1
@@ -764,7 +764,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 46773f82486db864a93ad0a2069f5bf9, type: 3}
+  m_audioClip: {fileID: 8300000, guid: ed72d2ee8cf0efb44853159f273c04b0, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
