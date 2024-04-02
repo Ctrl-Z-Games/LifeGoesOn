@@ -1261,7 +1261,6 @@ GameObject:
   - component: {fileID: 1771852298}
   - component: {fileID: 1771852297}
   - component: {fileID: 1771852299}
-  - component: {fileID: 1771852300}
   m_Layer: 0
   m_Name: BABY_KeyQ
   m_TagString: Untagged
@@ -1351,20 +1350,6 @@ MonoBehaviour:
   defaultImage: {fileID: 21300000, guid: 0c489aa406226431c9239fba4395653f, type: 3}
   pressedImage: {fileID: 21300000, guid: 6fcc71815105e47efbd59b8a16b4a5b9, type: 3}
   keyToPress: 113
---- !u!114 &1771852300
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1771852295}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71f0cfdc748a35c4eb638e49b92fec92, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 112
-  prefab: {fileID: 4514070372983678345, guid: d274af8a53a58428486f979be2f2940e, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
