@@ -5,6 +5,7 @@ using UnityEngine;
 public class AnimController : MonoBehaviour
 {
     public Animator anim;
+    public GameObject character;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,9 +15,9 @@ public class AnimController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (character.transform.position.x > -0.9)
         {
-            anim.Play("BeatBear");
+            anim.Play("BabyEBS");
         }
     }
 }

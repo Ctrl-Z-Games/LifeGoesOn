@@ -7,6 +7,9 @@ public class BabySceneController : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject player;
+    public float endPosition;
+    public int numScenes;
+    public static GameManager instance;
     void Start()
     {
         
@@ -15,9 +18,13 @@ public class BabySceneController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(player.transform.position.x > 266)
+        if(player.transform.position.x > endPosition)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            //if (instance.currentScore >= 10)
+            //{
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + numScenes);
+            //}
+            
         }
     }
 }

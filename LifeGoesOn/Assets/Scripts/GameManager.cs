@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public AudioSource neutralMusic;
-    public AudioSource happyMusic;
-    public AudioSource sadMusic;
+    public AudioSource backgroundMusic;
     public bool isGameActive;
     public static GameManager instance;
     public int currentScore;
@@ -22,6 +20,11 @@ public class GameManager : MonoBehaviour
     private GameObject player;
     private SpriteRenderer accSR;
     private int timer;
+    public AudioSource voiceoverSource; 
+    public AudioClip[] voiceoverClips; 
+    private int voiceoverIndex = 0;
+    private bool isVoiceoverPlaying = false;
+    public float gap = 2f;
     
     // Start is called before the first frame update
     void Start()
@@ -34,6 +37,7 @@ public class GameManager : MonoBehaviour
         accSR = accuracyObj.GetComponent<SpriteRenderer>();
         timer = 0;
         //currentScore = 0;
+        
     }
 
     // Update is called once per frame
@@ -47,15 +51,29 @@ public class GameManager : MonoBehaviour
                 player.GetComponent<autoscroll>().hasStarted = true;
                 GetComponent<placeDialogue>().enabled = true;
                 
-                neutralMusic.Play();
-                //happyMusic.Play();
-                //sadMusic.Play();
+                backgroundMusic.Play();
+                
+                if (!isVoiceoverPlaying)
+                {
+                    StartCoroutine(PlayVoiceover());
+                }
             }
         }
 
         if (timer++ == 300) {
             accuracyObj.SetActive(false);
             timer = 0;
+        }
+    }
+    private IEnumerator PlayVoiceover()
+    {
+        foreach (var clip in voiceoverClips)
+        {
+            voiceoverSource.clip = clip;
+            voiceoverSource.Play();
+
+            // Wait for the clip to finish, then wait an additional 'gap' seconds
+            yield return new WaitForSeconds(clip.length + gap);
         }
     }
 

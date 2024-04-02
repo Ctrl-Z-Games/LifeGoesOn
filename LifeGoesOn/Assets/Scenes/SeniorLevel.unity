@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 372468776}
   - component: {fileID: 372468777}
   - component: {fileID: 372468775}
+  - component: {fileID: 372468778}
   m_Layer: 0
   m_Name: PlacementManager
   m_TagString: Untagged
@@ -185,9 +186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79ead8c9014984fa3ad921c0917f8796, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  neutralMusic: {fileID: 1488408076}
-  happyMusic: {fileID: 1488408076}
-  sadMusic: {fileID: 1488408076}
+  backgroundMusic: {fileID: 1488408076}
   isGameActive: 0
   currentScore: 0
   OkHitScore: 1
@@ -223,6 +222,21 @@ MonoBehaviour:
   speed: 0.005
   offset: 0
   enabled: 0
+--- !u!114 &372468778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 372468773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7305ec45d3d1e46a28e00fc0714311d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 906866191}
+  endPosition: 255
+  numScenes: 1
 --- !u!1 &410797995
 GameObject:
   m_ObjectHideFlags: 0
