@@ -9,6 +9,7 @@ public class placeDialogue : MonoBehaviour
     public GameObject spritePrefab;
     public float space;
     public float speed = 0.005f;
+    public float offset = 0.0f;
     public bool enabled = false;
     private List<GameObject> texts;
 
@@ -17,7 +18,7 @@ public class placeDialogue : MonoBehaviour
         texts = new List<GameObject>();
         for (int i = 0; i < dialogs.Count; i++) {
             GameObject text = Instantiate(spritePrefab, transform);
-            text.transform.position = new Vector3(space * (i + 1), 2.5f);
+            text.transform.position = new Vector3(space * (i + 1) + offset, 2.5f);
             text.GetComponent<SpriteRenderer>().sprite = dialogs[i];
             texts.Add(text);
         }

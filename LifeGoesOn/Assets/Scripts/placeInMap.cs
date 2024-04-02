@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class placeInMap : MonoBehaviour
 {
-    public float horizontalSpaceMod;
+    public float horizontalSpaceMod = 2.74f;
     public TextAsset mapFile;
     public GameObject qHitbox, pHitbox;
 

@@ -156,9 +156,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79ead8c9014984fa3ad921c0917f8796, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  neutralMusic: {fileID: 0}
-  happyMusic: {fileID: 0}
-  sadMusic: {fileID: 0}
+  neutralMusic: {fileID: 1501854310}
+  happyMusic: {fileID: 1501854310}
+  sadMusic: {fileID: 1501854310}
   isGameActive: 0
   currentScore: 0
   OkHitScore: 1
@@ -166,6 +166,7 @@ MonoBehaviour:
   PerfectHitScore: 3
   FailHitScore: -1
   accuracyPrefab: {fileID: 6148598675620483694, guid: 106775ee378510242b94933d9d4d8e74, type: 3}
+  accuracyHeight: 2
   fail: {fileID: 21300000, guid: 3e8cd672b0d5146a8875d404a5a80395, type: 3}
   ok: {fileID: 21300000, guid: 6e983fdb8a91d49c69fd8fe7ef9a46cd, type: 3}
   good: {fileID: 21300000, guid: 954ee31ce1c6f46589e5239a3cafaf03, type: 3}
@@ -197,7 +198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a83b62e4311b6c4bb73ad495112ba63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  horizontalSpaceMod: 2.74
+  horizontalSpaceMod: 2.73
   mapFile: {fileID: 4900000, guid: a3bb121cc42f44704842263f9d069a9a, type: 3}
   qHitbox: {fileID: 4404175141449542206, guid: 75017faed50b315438f8247bd3503cbb, type: 3}
   pHitbox: {fileID: 0}
@@ -223,6 +224,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 84ba31c62cb135143b2a83cd146133e2, type: 3}
   spritePrefab: {fileID: 6925532381695245283, guid: b70dff9dd249e4e4782f1d103c7abf65, type: 3}
   space: 25
+  speed: 0.005
+  offset: -13
+  enabled: 0
 --- !u!114 &153780895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -977,7 +981,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 302b6f948f1144c74bf080d4df325026, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e79e695c6b6c1f647acef333982600aa, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -1257,6 +1261,7 @@ GameObject:
   - component: {fileID: 1771852298}
   - component: {fileID: 1771852297}
   - component: {fileID: 1771852299}
+  - component: {fileID: 1771852300}
   m_Layer: 0
   m_Name: BABY_KeyQ
   m_TagString: Untagged
@@ -1346,6 +1351,20 @@ MonoBehaviour:
   defaultImage: {fileID: 21300000, guid: 0c489aa406226431c9239fba4395653f, type: 3}
   pressedImage: {fileID: 21300000, guid: 6fcc71815105e47efbd59b8a16b4a5b9, type: 3}
   keyToPress: 113
+--- !u!114 &1771852300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1771852295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71f0cfdc748a35c4eb638e49b92fec92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: 112
+  prefab: {fileID: 4514070372983678345, guid: d274af8a53a58428486f979be2f2940e, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
