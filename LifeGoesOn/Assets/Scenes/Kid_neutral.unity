@@ -199,6 +199,9 @@ MonoBehaviour:
   ok: {fileID: 21300000, guid: c053a11f4842848dd8d74987d173571a, type: 3}
   good: {fileID: 21300000, guid: 474801bd51cad4197a8d4e43e066176f, type: 3}
   perfect: {fileID: 21300000, guid: 5eb30aafd7a77426baa680d486342a66, type: 3}
+  voiceoverSource: {fileID: 0}
+  voiceoverClips: []
+  gap: 2
 --- !u!114 &372468777
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -225,6 +228,7 @@ MonoBehaviour:
   speed: 0.005
   offset: 0
   enabled: 0
+  height: 3
 --- !u!114 &372468778
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -195,7 +195,7 @@ MonoBehaviour:
   PerfectHitScore: 3
   FailHitScore: -1
   accuracyPrefab: {fileID: 6148598675620483694, guid: 106775ee378510242b94933d9d4d8e74, type: 3}
-  accuracyHeight: 3
+  accuracyHeight: 2.7
   fail: {fileID: 21300000, guid: 40509e8e1c9c74855b02dca06f204423, type: 3}
   ok: {fileID: 21300000, guid: 87a6393bd894b4462aaac8021bdc8fd7, type: 3}
   good: {fileID: 21300000, guid: f3588eb60688d4b62bbc628935232427, type: 3}
@@ -227,6 +227,7 @@ MonoBehaviour:
   speed: 0.005
   offset: 0
   enabled: 0
+  height: 3.5
 --- !u!212 &372468779
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -674,8 +675,8 @@ Transform:
   m_GameObject: {fileID: 906866191}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10, y: -0.56, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -10, y: -0.75, z: 0}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1793796197}
