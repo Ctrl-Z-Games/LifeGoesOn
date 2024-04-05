@@ -200,6 +200,9 @@ MonoBehaviour:
   ok: {fileID: 21300000, guid: 87a6393bd894b4462aaac8021bdc8fd7, type: 3}
   good: {fileID: 21300000, guid: f3588eb60688d4b62bbc628935232427, type: 3}
   perfect: {fileID: 21300000, guid: 191d53a3743694b4898f59ab9abb2127, type: 3}
+  voiceoverSource: {fileID: 0}
+  voiceoverClips: []
+  gap: 2
 --- !u!114 &372468777
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -213,12 +216,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogs:
-  - {fileID: 21300000, guid: 652458babe4014c3384f7cd16dd24b24, type: 3}
-  - {fileID: 21300000, guid: 1c25e7aa3f5204131ae9adabf2157119, type: 3}
-  - {fileID: 21300000, guid: ffa45269eb37b433cb7ad37a43a83103, type: 3}
-  - {fileID: 21300000, guid: 1f5cc2dfda7dd4e72afd4b2acd233894, type: 3}
-  - {fileID: 21300000, guid: 5885758ffcd73453995faa5e44894efd, type: 3}
-  - {fileID: 21300000, guid: fdd2d2c1bfe3344529a3c02de35b327b, type: 3}
+  - {fileID: 21300000, guid: f8e7f802d95ee4e389328a5b4f5eb28c, type: 3}
+  - {fileID: 21300000, guid: e1a95b0414ed04d82a4094434384d98d, type: 3}
+  - {fileID: 21300000, guid: 6f9f0209e4c7f419785f75c12fc4db9d, type: 3}
+  - {fileID: 21300000, guid: 861dd755a48b24e699f322f8d257acd0, type: 3}
+  - {fileID: 21300000, guid: 63514916dbb3945cdabac8daabeb2eae, type: 3}
+  - {fileID: 21300000, guid: b72022eb64a204994932eabe0ab49f1d, type: 3}
   spritePrefab: {fileID: 6925532381695245283, guid: b70dff9dd249e4e4782f1d103c7abf65, type: 3}
   space: 20
   speed: 0.005
