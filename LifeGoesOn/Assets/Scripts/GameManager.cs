@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
     public AudioClip[] voiceoverClips; 
     private int voiceoverIndex = 0;
     private bool isVoiceoverPlaying = false;
-    public float gap = 2f;
+    public float gap = 1f;
     
     // Start is called before the first frame update
     void Start()
@@ -49,7 +49,8 @@ public class GameManager : MonoBehaviour
             {
                 isGameActive = true;
                 player.GetComponent<autoscroll>().hasStarted = true;
-                GetComponent<placeDialogue>().enabled = true;
+                //GetComponent<placeDialogue>().enabled = true;
+                GameObject.Find("dialogs").GetComponent<Animator>().Play("dialog");
                 
                 backgroundMusic.Play();
                 
