@@ -171,7 +171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   horizontalSpaceMod: 2.73
-  mapFile: {fileID: 4900000, guid: debc0eeec9dcb804ea1f0cb0fe38c5fa, type: 3}
+  mapFile: {fileID: 4900000, guid: 3198905a35bc3134eabef9559990477d, type: 3}
   qHitbox: {fileID: 7861901813682168695, guid: d5d7431b302b2c84e8a2d9c2aa8ec06a, type: 3}
   pHitbox: {fileID: 7836904469303024619, guid: 1354a271c9025884691a33106a495209, type: 3}
 --- !u!114 &372468776
@@ -199,6 +199,9 @@ MonoBehaviour:
   ok: {fileID: 21300000, guid: c053a11f4842848dd8d74987d173571a, type: 3}
   good: {fileID: 21300000, guid: 474801bd51cad4197a8d4e43e066176f, type: 3}
   perfect: {fileID: 21300000, guid: 5eb30aafd7a77426baa680d486342a66, type: 3}
+  voiceoverSource: {fileID: 0}
+  voiceoverClips: []
+  gap: 2
 --- !u!114 &372468777
 MonoBehaviour:
   m_ObjectHideFlags: 0

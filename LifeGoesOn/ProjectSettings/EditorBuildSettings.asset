@@ -39,19 +39,19 @@ EditorBuildSettings:
     path: Assets/Scenes/KidToTeen.unity
     guid: 983c9d9daf4a546a3a4b03cb4334da0e
   - enabled: 1
-    path: Assets/Scenes/TeenLevel.unity
+    path: Assets/Scenes/oldLevels/TeenLevel.unity
     guid: fafedddf25fef443682e4b87f7fa4741
   - enabled: 1
     path: Assets/Scenes/TeenToAdult.unity
     guid: 01ae957fea9a14addb3576655ffc0650
   - enabled: 1
-    path: Assets/Scenes/AdultLevel.unity
+    path: Assets/Scenes/oldLevels/AdultLevel.unity
     guid: b5eca0fd4b6c54fccbe8b3fe412b5e3b
   - enabled: 1
     path: Assets/Scenes/AdultToS.unity
     guid: 916d3b8149448458797ca62d045c0e1b
   - enabled: 1
-    path: Assets/Scenes/SeniorLevel.unity
+    path: Assets/Scenes/oldLevels/SeniorLevel.unity
     guid: e238634cd400d4c7bb2c78bb626a0963
   - enabled: 1
     path: Assets/Scenes/credits.unity
