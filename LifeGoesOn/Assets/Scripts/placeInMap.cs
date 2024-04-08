@@ -21,13 +21,13 @@ public class placeInMap : MonoBehaviour
                 case 1: // bottom Q
                     obj = Instantiate(qHitbox, transform);
                     obj.transform.position = transform.position + new Vector3(i * horizontalSpaceMod, 0.4f);
-                    obj.AddComponent<NoteObject>().setKeyToPress(KeyCode.Q);
+                    obj.AddComponent<NoteObject>().setKeyToPress(KeyCode.Q, KeyCode.P);
                     break;
 
                 case 2: // top P
                     obj = Instantiate(pHitbox, transform);
                     obj.transform.position = transform.position + new Vector3(i * horizontalSpaceMod, 2.0f);
-                    obj.AddComponent<NoteObject>().setKeyToPress(KeyCode.P);
+                    obj.AddComponent<NoteObject>().setKeyToPress(KeyCode.P, KeyCode.Q);
                     break;
 
                 case 3: // both Q + P

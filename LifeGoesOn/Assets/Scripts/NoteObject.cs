@@ -6,6 +6,7 @@ public class NoteObject : MonoBehaviour
 {
 	private int pressedState = 0;
     private KeyCode keyToPress;
+    private KeyCode bannedKey = KeyCode.Escape;
 	private Animator anim, shadowAnim;
     private Collider2D player;
 
@@ -14,8 +15,9 @@ public class NoteObject : MonoBehaviour
         shadowAnim = transform.GetChild(0).GetComponent<Animator>();
     }
 
-    public void setKeyToPress(KeyCode key) {
+    public void setKeyToPress(KeyCode key, KeyCode banned = KeyCode.Escape) {
         this.keyToPress = key;
+        this.bannedKey = banned;
     }
 
     private void Update() {
@@ -23,7 +25,7 @@ public class NoteObject : MonoBehaviour
             //gameObject.SetActive(false);
             float distanceBetweenObjects = transform.position.x - player.transform.position.x;
 
-            if (Input.GetKeyDown(keyToPress)) {
+            if (Input.GetKeyDown(keyToPress) && !Input.GetKeyDown(bannedKey)) {
                 if (Mathf.Abs(distanceBetweenObjects) < 0.25) {
                     GameManager.instance.PerfectHit();
                     anim.Play("clicked", 0, 0);
@@ -39,6 +41,10 @@ public class NoteObject : MonoBehaviour
                     shadowAnim.Play("clicked", 0, 0);
                 }
                 pressedState = 2;
+            }
+
+            if (Input.GetKeyDown(bannedKey)) {
+                pressedState = 3;
             }
 
             if (distanceBetweenObjects <= -1.0) { pressedState = 3; }
