@@ -24,7 +24,8 @@ public class GameManager : MonoBehaviour
     public AudioClip[] voiceoverClips; 
     private int voiceoverIndex = 0;
     private bool isVoiceoverPlaying = false;
-    public float gap = 2f;
+    private bool accJuice = false;
+    public float gap = 1f;
     
     // Start is called before the first frame update
     void Start()
@@ -49,7 +50,8 @@ public class GameManager : MonoBehaviour
             {
                 isGameActive = true;
                 player.GetComponent<autoscroll>().hasStarted = true;
-                GetComponent<placeDialogue>().enabled = true;
+                //GetComponent<placeDialogue>().enabled = true;
+                GameObject.Find("dialogs").GetComponent<Animator>().Play("dialog");
                 
                 backgroundMusic.Play();
                 
@@ -60,9 +62,17 @@ public class GameManager : MonoBehaviour
             }
         }
 
-        if (timer++ == 300) {
+        if (timer++ == 100) {
             accuracyObj.SetActive(false);
             timer = 0;
+        }
+
+        if (timer == 5) {
+            accJuice = false;
+        }
+
+        if (accJuice) {
+            accuracyObj.transform.position -= new Vector3(0f, 0.05f);
         }
     }
     private IEnumerator PlayVoiceover()
@@ -84,7 +94,8 @@ public class GameManager : MonoBehaviour
         accuracyObj.SetActive(true);
         timer = 0;
         accSR.sprite = ok;
-        currentScore += OkHitScore;
+        accuracyObj.transform.position = player.transform.position + new Vector3(0f, accuracyHeight + 0.25f);
+        accJuice = true;
         Debug.Log(currentScore);
     }
     public void GoodHit()
@@ -94,7 +105,8 @@ public class GameManager : MonoBehaviour
         accuracyObj.SetActive(true);
         timer = 0;
         accSR.sprite = good;
-        currentScore += GoodHitScore;
+        accuracyObj.transform.position = player.transform.position + new Vector3(0f, accuracyHeight + 0.25f);
+        accJuice = true;
         Debug.Log(currentScore);
     }
     public void PerfectHit()
@@ -104,7 +116,8 @@ public class GameManager : MonoBehaviour
         accuracyObj.SetActive(true);
         timer = 0;
         accSR.sprite = perfect;
-        currentScore += PerfectHitScore;
+        accuracyObj.transform.position = player.transform.position + new Vector3(0f, accuracyHeight + 0.25f);
+        accJuice = true;
         Debug.Log(currentScore);
     } 
     public void FailHit()
@@ -114,7 +127,8 @@ public class GameManager : MonoBehaviour
         accuracyObj.SetActive(true);
         timer = 0;
         accSR.sprite = fail;
-        currentScore += FailHitScore;
+        accuracyObj.transform.position = player.transform.position + new Vector3(0f, accuracyHeight + 0.25f);
+        accJuice = true;
         Debug.Log(currentScore);
     }
 }
