@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -26,6 +27,12 @@ public class GameManager : MonoBehaviour
     private bool isVoiceoverPlaying = false;
     private bool accJuice = false;
     public float gap = 1f;
+    
+    public float endPosition;
+    public int numHappyScenes;
+    public int numNeutralScenes;    
+    public int numSadScenes;
+
     
     // Start is called before the first frame update
     void Start()
@@ -73,6 +80,15 @@ public class GameManager : MonoBehaviour
 
         if (accJuice) {
             accuracyObj.transform.position -= new Vector3(0f, 0.05f);
+        }
+        
+        if(player.transform.position.x > endPosition)
+        {
+            if (instance.currentScore >= 80)
+            {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + numHappyScenes);
+            }
+            
         }
     }
     private IEnumerator PlayVoiceover()

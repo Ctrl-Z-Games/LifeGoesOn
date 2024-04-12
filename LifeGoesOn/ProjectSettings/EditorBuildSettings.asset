@@ -24,35 +24,65 @@ EditorBuildSettings:
     path: Assets/Scenes/BabyLevel.unity
     guid: 2de3d541bf85f414e90b62f551c884a5
   - enabled: 1
-    path: Assets/Scenes/BabyToKid.unity
+    path: Assets/Scenes/ToKidPerfect.unity
     guid: 621f29427d2fd4b7cb28fcf4e34f2b5d
   - enabled: 1
     path: Assets/Scenes/Kid_happy.unity
     guid: b9c04ee750526447f8ae8880ac9321c3
   - enabled: 1
+    path: Assets/Scenes/ToKidNeutral.unity
+    guid: ecaf91e5a45e04b62af0943d44aed507
+  - enabled: 1
     path: Assets/Scenes/Kid_neutral.unity
     guid: 5ea4bdca0705d4e6489c5c15fa905064
+  - enabled: 1
+    path: Assets/Scenes/ToKidSad.unity
+    guid: a9e41004900204902a2b0e3c054333b8
   - enabled: 1
     path: Assets/Scenes/Kid_sad.unity
     guid: 61ccc2ae2954548eb92cb6eb6a60ad5b
   - enabled: 1
-    path: Assets/Scenes/KidToTeen.unity
+    path: Assets/Scenes/ToTeenHappy.unity
     guid: 983c9d9daf4a546a3a4b03cb4334da0e
   - enabled: 1
-    path: Assets/Scenes/oldLevels/TeenLevel.unity
-    guid: fafedddf25fef443682e4b87f7fa4741
+    path: Assets/Scenes/Teen_happy.unity
+    guid: e9b04365e380ab04494a300111c9ae3d
   - enabled: 1
-    path: Assets/Scenes/TeenToAdult.unity
+    path: Assets/Scenes/ToTeenNeutral.unity
+    guid: 8bb580d62daca4ee1b8330547cc1b353
+  - enabled: 1
+    path: Assets/Scenes/Teen_neutral.unity
+    guid: b5542a98484788e48b214801e53fea51
+  - enabled: 1
+    path: Assets/Scenes/ToTeenSad.unity
+    guid: c5e96c897c1864afa8b56650454259bd
+  - enabled: 1
+    path: Assets/Scenes/Teen_sad.unity
+    guid: a1c0fec55fd99294dbc6ebc96d50e426
+  - enabled: 1
+    path: Assets/Scenes/ToAdult.unity
     guid: 01ae957fea9a14addb3576655ffc0650
   - enabled: 1
-    path: Assets/Scenes/oldLevels/AdultLevel.unity
-    guid: b5eca0fd4b6c54fccbe8b3fe412b5e3b
+    path: Assets/Scenes/Adult_happy.unity
+    guid: c8ff4da1b09fb7d42af95ab0ae4a8cf4
   - enabled: 1
-    path: Assets/Scenes/AdultToS.unity
+    path: Assets/Scenes/Adult_neutral.unity
+    guid: e24191c1032f62248b3d2d30d3d007e6
+  - enabled: 1
+    path: Assets/Scenes/Adult_sad.unity
+    guid: 87159f2e020d41b43bf36552399cba0f
+  - enabled: 1
+    path: Assets/Scenes/ToSenior.unity
     guid: 916d3b8149448458797ca62d045c0e1b
   - enabled: 1
-    path: Assets/Scenes/oldLevels/SeniorLevel.unity
-    guid: e238634cd400d4c7bb2c78bb626a0963
+    path: Assets/Scenes/Senior_happy.unity
+    guid: cac24e1fcdef2014ab08acba8a6c1c51
+  - enabled: 1
+    path: Assets/Scenes/Senior_neutral.unity
+    guid: 5e99aa2bce97c0446b3be346094993a9
+  - enabled: 1
+    path: Assets/Scenes/Senior_sad.unity
+    guid: 5c281e1927f690b45b99c67ed9b7d010
   - enabled: 1
     path: Assets/Scenes/credits.unity
     guid: b67e57b49c77d4452a96ffd286c1ae4e

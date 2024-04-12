@@ -293,6 +293,10 @@ MonoBehaviour:
   - {fileID: 8300000, guid: e0b64d67bb1c34a479e71d0305555e18, type: 3}
   - {fileID: 8300000, guid: 087792aee5850456d86d6406b7b18d31, type: 3}
   gap: 2
+  endPosition: 263
+  numHappyScenes: 0
+  numNeutralScenes: 0
+  numSadScenes: 0
 --- !u!114 &372468778
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -300,7 +304,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 372468773}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7305ec45d3d1e46a28e00fc0714311d3, type: 3}
   m_Name: 
