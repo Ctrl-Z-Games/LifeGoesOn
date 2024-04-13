@@ -96,6 +96,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Senior_sad.unity
     guid: 5c281e1927f690b45b99c67ed9b7d010
   - enabled: 1
+    path: Assets/Scenes/ToEndHappy.unity
+    guid: ecd57072c8b0447779c1819c4f78fcae
+  - enabled: 1
+    path: Assets/Scenes/ToEndNeutral.unity
+    guid: 7df1a11a6a6104d4b94eda0934ce546c
+  - enabled: 1
+    path: Assets/Scenes/ToEndSad.unity
+    guid: d407699d900bc4fbe906f918cd8a28fb
+  - enabled: 1
     path: Assets/Scenes/credits.unity
     guid: b67e57b49c77d4452a96ffd286c1ae4e
   m_configObjects: {}

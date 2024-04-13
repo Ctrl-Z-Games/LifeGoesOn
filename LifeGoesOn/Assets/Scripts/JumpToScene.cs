@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class ReturnToMenuScene : MonoBehaviour
 {
+    public int sceneIndex;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +19,7 @@ public class ReturnToMenuScene : MonoBehaviour
         // Check if the Enter key is pressed
         if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter))
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(sceneIndex);
         }
     }
 }

@@ -305,8 +305,8 @@ MonoBehaviour:
   gap: 1
   endPosition: 255
   numHappyScenes: 5
-  numNeutralScenes: 7
-  numSadScenes: 9
+  numNeutralScenes: 6
+  numSadScenes: 7
   happyScore: 56
   neutralScore: 28
 --- !u!114 &372468778
