@@ -60,26 +60,38 @@ EditorBuildSettings:
     path: Assets/Scenes/Teen_sad.unity
     guid: a1c0fec55fd99294dbc6ebc96d50e426
   - enabled: 1
-    path: Assets/Scenes/ToAdult.unity
+    path: Assets/Scenes/ToAdultHappy.unity
     guid: 01ae957fea9a14addb3576655ffc0650
   - enabled: 1
     path: Assets/Scenes/Adult_happy.unity
     guid: c8ff4da1b09fb7d42af95ab0ae4a8cf4
   - enabled: 1
+    path: Assets/Scenes/ToAdultNeutral.unity
+    guid: 82af6b0386ec34ab4b5d216788d75b29
+  - enabled: 1
     path: Assets/Scenes/Adult_neutral.unity
     guid: e24191c1032f62248b3d2d30d3d007e6
+  - enabled: 1
+    path: Assets/Scenes/ToAdultSad.unity
+    guid: 7f7a9657e48ab412fbdd2b82791e6aa1
   - enabled: 1
     path: Assets/Scenes/Adult_sad.unity
     guid: 87159f2e020d41b43bf36552399cba0f
   - enabled: 1
-    path: Assets/Scenes/ToSenior.unity
+    path: Assets/Scenes/ToSeniorHappy.unity
     guid: 916d3b8149448458797ca62d045c0e1b
   - enabled: 1
     path: Assets/Scenes/Senior_happy.unity
     guid: cac24e1fcdef2014ab08acba8a6c1c51
   - enabled: 1
+    path: Assets/Scenes/ToSeniorNeutral.unity
+    guid: c59118ee6fabe42628cc11d93cfa213b
+  - enabled: 1
     path: Assets/Scenes/Senior_neutral.unity
     guid: 5e99aa2bce97c0446b3be346094993a9
+  - enabled: 1
+    path: Assets/Scenes/ToSeniorSad.unity
+    guid: ca1bb0e66c8284e419cf5ffd9e3373d1
   - enabled: 1
     path: Assets/Scenes/Senior_sad.unity
     guid: 5c281e1927f690b45b99c67ed9b7d010
