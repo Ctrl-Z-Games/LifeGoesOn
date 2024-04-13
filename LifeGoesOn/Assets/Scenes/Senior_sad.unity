@@ -294,10 +294,6 @@ MonoBehaviour:
   backgroundMusic: {fileID: 1488408076}
   isGameActive: 0
   currentScore: 0
-  OkHitScore: 1
-  GoodHitScore: 2
-  PerfectHitScore: 3
-  FailHitScore: -1
   accuracyPrefab: {fileID: 6148598675620483694, guid: 106775ee378510242b94933d9d4d8e74, type: 3}
   accuracyHeight: 2.5
   fail: {fileID: 21300000, guid: b47f6eb63ab1aea40a0b372b31bb58d3, type: 3}
@@ -307,6 +303,12 @@ MonoBehaviour:
   voiceoverSource: {fileID: 0}
   voiceoverClips: []
   gap: 1
+  endPosition: 255
+  numHappyScenes: 1
+  numNeutralScenes: 3
+  numSadScenes: 5
+  happyScore: 52
+  neutralScore: 26
 --- !u!114 &372468778
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -314,7 +316,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 372468773}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7305ec45d3d1e46a28e00fc0714311d3, type: 3}
   m_Name: 

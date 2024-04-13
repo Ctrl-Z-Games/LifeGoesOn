@@ -159,10 +159,6 @@ MonoBehaviour:
   backgroundMusic: {fileID: 1501854310}
   isGameActive: 0
   currentScore: 0
-  OkHitScore: 1
-  GoodHitScore: 2
-  PerfectHitScore: 3
-  FailHitScore: -1
   accuracyPrefab: {fileID: 6148598675620483694, guid: 106775ee378510242b94933d9d4d8e74, type: 3}
   accuracyHeight: 2
   fail: {fileID: 21300000, guid: 3e8cd672b0d5146a8875d404a5a80395, type: 3}
@@ -180,7 +176,11 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 63ce842c41c5e482191b4d92ec9bc842, type: 3}
   gap: 2
   endPosition: 194
-  numScenes: 1
+  numHappyScenes: 1
+  numNeutralScenes: 3
+  numSadScenes: 5
+  happyScore: 62
+  neutralScore: 31
 --- !u!4 &153780892
 Transform:
   m_ObjectHideFlags: 0

@@ -9,10 +9,10 @@ public class GameManager : MonoBehaviour
     public bool isGameActive;
     public static GameManager instance;
     public int currentScore;
-    public int OkHitScore = 1;
-    public int GoodHitScore = 2;
-    public int PerfectHitScore = 3;
-    public int FailHitScore = -1;
+    private int OkHitScore = 1;
+    private int GoodHitScore = 2;
+    private int PerfectHitScore = 3;
+    private int FailHitScore = -2;
     public GameObject accuracyPrefab;
     public float accuracyHeight = 2.0f;
     public Sprite fail, ok, good, perfect;
@@ -32,6 +32,8 @@ public class GameManager : MonoBehaviour
     public int numHappyScenes;
     public int numNeutralScenes;    
     public int numSadScenes;
+    public int happyScore; // 62 for baby
+    public int neutralScore; // 31 for baby
 
     
     // Start is called before the first frame update
@@ -84,9 +86,17 @@ public class GameManager : MonoBehaviour
         
         if(player.transform.position.x > endPosition)
         {
-            if (instance.currentScore >= 80)
+            if (instance.currentScore >= happyScore)
             {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + numHappyScenes);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + numHappyScenes);
+            }
+            else if (instance.currentScore >= neutralScore && instance.currentScore < happyScore)
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + numNeutralScenes);
+            }
+            else
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + numSadScenes);
             }
             
         }
