@@ -5,7 +5,7 @@ using UnityEngine;
 public class AnimController : MonoBehaviour
 {
     public Animator anim;
-    public GameObject character;
+    
     // Start is called before the first frame update
     void Start()
     {

@@ -12,10 +12,7 @@ public class SceneTracker : MonoBehaviour
     public Animator animator;
     public HashSet<int> playedScenes = new HashSet<int>();
     
-    void Awake()
-    {
-        DontDestroyOnLoad(this.gameObject);
-    }
+    
     
     void Start()
     {
