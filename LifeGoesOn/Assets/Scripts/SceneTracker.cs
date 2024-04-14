@@ -8,13 +8,6 @@ public class SceneTracker : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        int currentSceneID = SceneManager.GetActiveScene().buildIndex;
-        GameManager.Instance.RecordScenePlayed(currentSceneID);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        //GameManager.instance.RecordScenePlayed(SceneManager.GetActiveScene().buildIndex);
     }
 }
