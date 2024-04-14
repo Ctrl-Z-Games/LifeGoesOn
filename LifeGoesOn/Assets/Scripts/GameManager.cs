@@ -34,6 +34,8 @@ public class GameManager : MonoBehaviour
     public int happyScore; // 62 for baby
     public int neutralScore; // 31 for baby
 
+	public Dictionary<int, int> scoresByLevel = new Dictionary<int, int>();
+
     
     // Start is called before the first frame update
     void Start()
