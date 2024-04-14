@@ -26,7 +26,6 @@ public class GameManager : MonoBehaviour
     private int voiceoverIndex = 0;
     private bool isVoiceoverPlaying = false;
     private bool accJuice = false;
-    public float gap = 1f;
     
     public float endPosition;
     public int numHappyScenes;
@@ -60,7 +59,7 @@ public class GameManager : MonoBehaviour
                 isGameActive = true;
                 player.GetComponent<autoscroll>().hasStarted = true;
                 //GetComponent<placeDialogue>().enabled = true;
-                GameObject.Find("dialogs").GetComponent<Animator>().Play("dialog");
+                GameObject.Find("dialog").GetComponent<Animator>().Play("dialog");
                 
                 backgroundMusic.Play();
                 
@@ -109,7 +108,7 @@ public class GameManager : MonoBehaviour
             voiceoverSource.Play();
 
             // Wait for the clip to finish, then wait an additional 'gap' seconds
-            yield return new WaitForSeconds(clip.length + gap);
+            yield return new WaitForSeconds(clip.length);
         }
     }
 
