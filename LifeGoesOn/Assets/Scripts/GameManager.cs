@@ -5,6 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+	// track played scenes
+	public static GameManager Instance { get; private set; }
+	public HashSet<int> PlayedScenes = new HashSet<int>();
+
     public AudioSource backgroundMusic;
     public bool isGameActive;
     public static GameManager instance;
@@ -34,7 +38,6 @@ public class GameManager : MonoBehaviour
     public int happyScore; // 62 for baby
     public int neutralScore; // 31 for baby
 
-    
     // Start is called before the first frame update
     void Start()
     {
@@ -155,5 +158,14 @@ public class GameManager : MonoBehaviour
         accuracyObj.transform.position = player.transform.position + new Vector3(0f, accuracyHeight + 0.25f);
         accJuice = true;
         Debug.Log(currentScore);
+    }
+
+	public void RecordScenePlayed(int sceneID)
+    {
+        var interestedScenes = new HashSet<int> { 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 32, 33 };
+        if (interestedScenes.Contains(sceneID))
+        {
+            PlayedScenes.Add(sceneID);
+        }
     }
 }
