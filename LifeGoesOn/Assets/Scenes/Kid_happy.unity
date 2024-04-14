@@ -280,15 +280,13 @@ MonoBehaviour:
   perfect: {fileID: 21300000, guid: 5eb30aafd7a77426baa680d486342a66, type: 3}
   voiceoverSource: {fileID: 397380175}
   voiceoverClips:
-  - {fileID: 8300000, guid: 4fdcf6032bc284d2aa6748ea3ae4f1e6, type: 3}
-  - {fileID: 8300000, guid: d6550459a7c7e41b0b466d0924fe7f13, type: 3}
-  - {fileID: 8300000, guid: 6c047cac92a9f461194b558081739bac, type: 3}
-  - {fileID: 8300000, guid: d98e3cf8ce81d4ba39e9a085a2b5ed36, type: 3}
-  - {fileID: 8300000, guid: 1647d5d37d1ce4eadb8548a94232d45e, type: 3}
-  - {fileID: 8300000, guid: 58caf6a823e604545811319d403bdeac, type: 3}
-  - {fileID: 8300000, guid: e0b64d67bb1c34a479e71d0305555e18, type: 3}
-  - {fileID: 8300000, guid: 087792aee5850456d86d6406b7b18d31, type: 3}
-  gap: 2
+  - {fileID: 8300000, guid: 08e982fed71e2c84da669220f7e64559, type: 3}
+  - {fileID: 8300000, guid: e8947dfedbb4409479b8e53677d4ca39, type: 3}
+  - {fileID: 8300000, guid: 567ce6c42b5a32045adc4a3b11e97422, type: 3}
+  - {fileID: 8300000, guid: 5665f8a70d280cc49b08258fdcfc30c5, type: 3}
+  - {fileID: 8300000, guid: 0b23f3202f05fe743814e4c7aa94a76e, type: 3}
+  - {fileID: 8300000, guid: 2ccf60a8308bd5244a6d59cca0743dc8, type: 3}
+  - {fileID: 8300000, guid: 9248c88c7105f034c86f58e71f211189, type: 3}
   endPosition: 263
   numHappyScenes: 5
   numNeutralScenes: 7
@@ -1219,7 +1217,7 @@ GameObject:
   - component: {fileID: 1217191305}
   - component: {fileID: 1217191304}
   m_Layer: 0
-  m_Name: dialogs
+  m_Name: dialog
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1235,7 +1233,7 @@ Animator:
   m_GameObject: {fileID: 1217191303}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9cffae1680da96640bfe77c8fa74cd00, type: 2}
+  m_Controller: {fileID: 9100000, guid: a75d09ab0e822854ea8c8f6955a32e6d, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1287,7 +1285,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3c381a095def46849964da4157960d5c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ca266975f29e2ad49b22501c304f8cd4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
