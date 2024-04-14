@@ -195,9 +195,14 @@ MonoBehaviour:
   ok: {fileID: 21300000, guid: 87a6393bd894b4462aaac8021bdc8fd7, type: 3}
   good: {fileID: 21300000, guid: f3588eb60688d4b62bbc628935232427, type: 3}
   perfect: {fileID: 21300000, guid: 191d53a3743694b4898f59ab9abb2127, type: 3}
-  voiceoverSource: {fileID: 0}
-  voiceoverClips: []
-  gap: 1
+  voiceoverSource: {fileID: 745471437}
+  voiceoverClips:
+  - {fileID: 8300000, guid: 3135f01cdf20aba47a1f15f56fbf8ad1, type: 3}
+  - {fileID: 8300000, guid: a558ffd9eba670544b6f9905767ecf4c, type: 3}
+  - {fileID: 8300000, guid: 379daa141858a54468f98c7481733137, type: 3}
+  - {fileID: 8300000, guid: d8332f74f30948145b08bba1e930de7c, type: 3}
+  - {fileID: 8300000, guid: 00be4bdfb17eec04a8b4839b116f3a20, type: 3}
+  - {fileID: 8300000, guid: e6c3bb20eb8dcbc419092d214b283929, type: 3}
   endPosition: 255
   numHappyScenes: 3
   numNeutralScenes: 5
@@ -498,7 +503,7 @@ GameObject:
   - component: {fileID: 506687402}
   - component: {fileID: 506687401}
   m_Layer: 0
-  m_Name: dialogs
+  m_Name: dialog
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -529,7 +534,7 @@ Animator:
   m_GameObject: {fileID: 506687399}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e666b279b1aa99c488bdd10a510c159b, type: 2}
+  m_Controller: {fileID: 9100000, guid: f9c498e743bbb7545ab3d3889dbc0334, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -589,7 +594,7 @@ SpriteRenderer:
   m_Size: {x: 9, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &688148783
