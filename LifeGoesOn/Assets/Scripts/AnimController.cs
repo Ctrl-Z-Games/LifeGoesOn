@@ -5,6 +5,7 @@ using UnityEngine;
 public class AnimController : MonoBehaviour
 {
     public Animator anim;
+    public string key;
     
     // Start is called before the first frame update
     void Start()
@@ -15,9 +16,7 @@ public class AnimController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (character.transform.position.x > -0.9)
-        {
-            anim.Play("BabyEBS");
-        }
+        string result = PlayerPrefs.GetString(key, "neutral");  
+        anim.Play(result);
     }
 }

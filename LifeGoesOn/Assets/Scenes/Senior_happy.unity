@@ -408,7 +408,6 @@ GameObject:
   - component: {fileID: 372468774}
   - component: {fileID: 372468776}
   - component: {fileID: 372468775}
-  - component: {fileID: 372468778}
   m_Layer: 0
   m_Name: PlacementManager
   m_TagString: Untagged
@@ -481,21 +480,7 @@ MonoBehaviour:
   numSadScenes: 7
   happyScore: 56
   neutralScore: 28
---- !u!114 &372468778
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 372468773}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7305ec45d3d1e46a28e00fc0714311d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 906866191}
-  endPosition: 255
-  numScenes: 1
+  key: senior
 --- !u!1 &420375938
 GameObject:
   m_ObjectHideFlags: 0

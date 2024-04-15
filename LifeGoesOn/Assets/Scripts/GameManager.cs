@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
     public int happyScore; // 62 for baby
     public int neutralScore; // 31 for baby
 
-	public Dictionary<int, int> scoresByLevel = new Dictionary<int, int>();
+	public string key;
 
     
     // Start is called before the first frame update
@@ -87,6 +87,9 @@ public class GameManager : MonoBehaviour
         
         if(player.transform.position.x > endPosition)
         {
+			
+            DetermineResult();
+
             if (instance.currentScore >= happyScore)
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + numHappyScenes);
@@ -114,48 +117,70 @@ public class GameManager : MonoBehaviour
         }
     }
 
+	public void DetermineResult()
+    {
+        string result;
+		if (currentScore >= happyScore)
+        {
+            result = "Happy";
+        }
+        else if (currentScore >= neutralScore)
+        {
+            result = "Neutral";
+        }
+        else
+        {
+            result = "Sad";
+        }
+		
+		//string key = "Level" + currentLevel;
+		PlayerPrefs.SetString(key, result);
+		PlayerPrefs.Save();
+		Debug.Log("Result for " + key + " is " + result);
+    }
+
     public void OkHit()
     {
-        Debug.Log("OK Hit");
+        //Debug.Log("OK Hit");
         currentScore += OkHitScore;
         accuracyObj.SetActive(true);
         timer = 0;
         accSR.sprite = ok;
         accuracyObj.transform.position = player.transform.position + new Vector3(0f, accuracyHeight + 0.25f);
         accJuice = true;
-        Debug.Log(currentScore);
+        //Debug.Log(currentScore);
     }
     public void GoodHit()
     {
-        Debug.Log("Good Hit");
+        //Debug.Log("Good Hit");
         currentScore += GoodHitScore;
         accuracyObj.SetActive(true);
         timer = 0;
         accSR.sprite = good;
         accuracyObj.transform.position = player.transform.position + new Vector3(0f, accuracyHeight + 0.25f);
         accJuice = true;
-        Debug.Log(currentScore);
+        //Debug.Log(currentScore);
     }
     public void PerfectHit()
     {
-        Debug.Log("Perfect Hit");
+        //Debug.Log("Perfect Hit");
         currentScore += PerfectHitScore;
         accuracyObj.SetActive(true);
         timer = 0;
         accSR.sprite = perfect;
         accuracyObj.transform.position = player.transform.position + new Vector3(0f, accuracyHeight + 0.25f);
         accJuice = true;
-        Debug.Log(currentScore);
+        //.Log(currentScore);
     } 
     public void FailHit()
     {
-        Debug.Log("Fail Hit");
+        //Debug.Log("Fail Hit");
         currentScore += FailHitScore;
         accuracyObj.SetActive(true);
         timer = 0;
         accSR.sprite = fail;
         accuracyObj.transform.position = player.transform.position + new Vector3(0f, accuracyHeight + 0.25f);
         accJuice = true;
-        Debug.Log(currentScore);
+        //Debug.Log(currentScore);
     }
 }

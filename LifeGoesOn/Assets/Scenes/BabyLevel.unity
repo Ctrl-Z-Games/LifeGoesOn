@@ -134,7 +134,6 @@ GameObject:
   - component: {fileID: 153780892}
   - component: {fileID: 153780891}
   - component: {fileID: 153780893}
-  - component: {fileID: 153780895}
   - component: {fileID: 153780897}
   - component: {fileID: 153780898}
   m_Layer: 0
@@ -180,6 +179,7 @@ MonoBehaviour:
   numSadScenes: 5
   happyScore: 62
   neutralScore: 31
+  key: baby
 --- !u!4 &153780892
 Transform:
   m_ObjectHideFlags: 0
@@ -211,21 +211,6 @@ MonoBehaviour:
   mapFile: {fileID: 4900000, guid: a3bb121cc42f44704842263f9d069a9a, type: 3}
   qHitbox: {fileID: 4404175141449542206, guid: 75017faed50b315438f8247bd3503cbb, type: 3}
   pHitbox: {fileID: 0}
---- !u!114 &153780895
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 153780890}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7305ec45d3d1e46a28e00fc0714311d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1203494837}
-  endPosition: 194
-  numScenes: 1
 --- !u!212 &153780897
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -308,12 +308,13 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0b23f3202f05fe743814e4c7aa94a76e, type: 3}
   - {fileID: 8300000, guid: 2ccf60a8308bd5244a6d59cca0743dc8, type: 3}
   - {fileID: 8300000, guid: 9248c88c7105f034c86f58e71f211189, type: 3}
-  endPosition: 228
+  endPosition: 263
   numHappyScenes: 1
   numNeutralScenes: 3
   numSadScenes: 5
   happyScore: 44
   neutralScore: 22
+  key: kid
 --- !u!1 &410797995
 GameObject:
   m_ObjectHideFlags: 0

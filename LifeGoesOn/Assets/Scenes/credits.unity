@@ -1165,6 +1165,71 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &829232065
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 829232067}
+  - component: {fileID: 829232066}
+  m_Layer: 0
+  m_Name: Music
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &829232066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829232065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93760c71e0c3e4438a0bb50bb2928399, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 1467021867}
+  babyMusic:
+  - {fileID: 8300000, guid: e79e695c6b6c1f647acef333982600aa, type: 3}
+  - {fileID: 8300000, guid: e79e695c6b6c1f647acef333982600aa, type: 3}
+  - {fileID: 8300000, guid: e79e695c6b6c1f647acef333982600aa, type: 3}
+  kidMusic:
+  - {fileID: 8300000, guid: 46773f82486db864a93ad0a2069f5bf9, type: 3}
+  - {fileID: 8300000, guid: ed72d2ee8cf0efb44853159f273c04b0, type: 3}
+  - {fileID: 8300000, guid: 27668e33705b8844f951c5943dbd2524, type: 3}
+  teenMusic:
+  - {fileID: 8300000, guid: 2698a959cf4fceb41a32b45c1f114680, type: 3}
+  - {fileID: 8300000, guid: e59c893d0870e83468f67a2bbd31d665, type: 3}
+  - {fileID: 8300000, guid: 7985680909cc60f409afc7ada7f1cae0, type: 3}
+  adultMusic:
+  - {fileID: 8300000, guid: a7e57cd0032ed4a4b8c4041aca8167ee, type: 3}
+  - {fileID: 8300000, guid: 35468e1a9229d2e4680d55a267564750, type: 3}
+  - {fileID: 8300000, guid: a6319f8a2dce6074ab1d612f3353fa14, type: 3}
+  seniorMusic:
+  - {fileID: 8300000, guid: dca10d8db066ab344934b041909baec7, type: 3}
+  - {fileID: 8300000, guid: 7fa95bd2bc083b64fb3d659c34dc1804, type: 3}
+  - {fileID: 8300000, guid: 070948ed4d0cd0c4cbccee38f9a3440a, type: 3}
+--- !u!4 &829232067
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829232065}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.5655808, y: 0.064034894, z: -0.108694375}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1016011131
 GameObject:
   m_ObjectHideFlags: 0
@@ -1408,6 +1473,134 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1016011132}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1467021866
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1467021868}
+  - component: {fileID: 1467021867}
+  m_Layer: 0
+  m_Name: baby
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1467021867
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467021866}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 302b6f948f1144c74bf080d4df325026, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1467021868
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467021866}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1492997508
 GameObject:
@@ -1706,7 +1899,6 @@ GameObject:
   - component: {fileID: 1570065254}
   - component: {fileID: 1570065253}
   - component: {fileID: 1570065255}
-  - component: {fileID: 1570065256}
   m_Layer: 0
   m_Name: BABY_End1
   m_TagString: Untagged
@@ -1809,31 +2001,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1570065251}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce13ed79c3fb24ecf9ecf28461ed27dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  happy: 7
-  neutral: 9
-  sad: 11
-  animator: {fileID: 0}
---- !u!114 &1570065256
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1570065251}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73e49df90074f4b52be397bda27ef067, type: 3}
+  m_Script: {fileID: 11500000, guid: c46a153d7efbc4bf4b0bbe33bf797952, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  happy: 7
-  neutral: 9
-  sad: 11
-  animator: {fileID: 0}
+  anim: {fileID: 0}
+  key: baby
 --- !u!1 &1595944610
 GameObject:
   m_ObjectHideFlags: 0
@@ -2302,7 +2476,6 @@ GameObject:
   - component: {fileID: 1840372459}
   - component: {fileID: 1840372458}
   - component: {fileID: 1840372460}
-  - component: {fileID: 1840372461}
   m_Layer: 0
   m_Name: TEEN
   m_TagString: Untagged
@@ -2405,31 +2578,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1840372456}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce13ed79c3fb24ecf9ecf28461ed27dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  happy: 19
-  neutral: 21
-  sad: 23
-  animator: {fileID: 0}
---- !u!114 &1840372461
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1840372456}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73e49df90074f4b52be397bda27ef067, type: 3}
+  m_Script: {fileID: 11500000, guid: c46a153d7efbc4bf4b0bbe33bf797952, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  happy: 19
-  neutral: 21
-  sad: 23
-  animator: {fileID: 0}
+  anim: {fileID: 0}
+  key: teen
 --- !u!1 &1856190623
 GameObject:
   m_ObjectHideFlags: 0
@@ -2632,7 +2787,6 @@ GameObject:
   - component: {fileID: 1971485571}
   - component: {fileID: 1971485572}
   - component: {fileID: 1971485573}
-  - component: {fileID: 1971485574}
   m_Layer: 0
   m_Name: ADT_End1
   m_TagString: Untagged
@@ -2735,31 +2889,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1971485569}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce13ed79c3fb24ecf9ecf28461ed27dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  happy: 25
-  neutral: 27
-  sad: 29
-  animator: {fileID: 0}
---- !u!114 &1971485574
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1971485569}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73e49df90074f4b52be397bda27ef067, type: 3}
+  m_Script: {fileID: 11500000, guid: c46a153d7efbc4bf4b0bbe33bf797952, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  happy: 25
-  neutral: 27
-  sad: 29
-  animator: {fileID: 0}
+  anim: {fileID: 0}
+  key: adult
 --- !u!1 &2047879425
 GameObject:
   m_ObjectHideFlags: 0
@@ -2856,7 +2992,6 @@ GameObject:
   - component: {fileID: 2053802693}
   - component: {fileID: 2053802695}
   - component: {fileID: 2053802696}
-  - component: {fileID: 2053802697}
   m_Layer: 0
   m_Name: sen
   m_TagString: Untagged
@@ -2959,31 +3094,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2053802692}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce13ed79c3fb24ecf9ecf28461ed27dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  happy: 31
-  neutral: 32
-  sad: 33
-  animator: {fileID: 0}
---- !u!114 &2053802697
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2053802692}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73e49df90074f4b52be397bda27ef067, type: 3}
+  m_Script: {fileID: 11500000, guid: c46a153d7efbc4bf4b0bbe33bf797952, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  happy: 31
-  neutral: 32
-  sad: 33
-  animator: {fileID: 0}
+  anim: {fileID: 0}
+  key: senior
 --- !u!1 &2075626933
 GameObject:
   m_ObjectHideFlags: 0
@@ -2996,7 +3113,6 @@ GameObject:
   - component: {fileID: 2075626936}
   - component: {fileID: 2075626935}
   - component: {fileID: 2075626937}
-  - component: {fileID: 2075626938}
   m_Layer: 0
   m_Name: Kid
   m_TagString: Untagged
@@ -3099,31 +3215,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2075626933}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce13ed79c3fb24ecf9ecf28461ed27dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  happy: 13
-  neutral: 15
-  sad: 17
-  animator: {fileID: 0}
---- !u!114 &2075626938
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2075626933}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73e49df90074f4b52be397bda27ef067, type: 3}
+  m_Script: {fileID: 11500000, guid: c46a153d7efbc4bf4b0bbe33bf797952, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  happy: 13
-  neutral: 15
-  sad: 17
-  animator: {fileID: 0}
+  anim: {fileID: 0}
+  key: kid
 --- !u!1 &2128270239
 GameObject:
   m_ObjectHideFlags: 0
@@ -3164,3 +3262,5 @@ SceneRoots:
   - {fileID: 773636251}
   - {fileID: 1016011132}
   - {fileID: 1837891341}
+  - {fileID: 829232067}
+  - {fileID: 1467021868}

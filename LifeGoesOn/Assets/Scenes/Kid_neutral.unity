@@ -262,7 +262,6 @@ GameObject:
   - component: {fileID: 372468774}
   - component: {fileID: 372468776}
   - component: {fileID: 372468775}
-  - component: {fileID: 372468777}
   m_Layer: 0
   m_Name: PlacementManager
   m_TagString: Untagged
@@ -331,24 +330,13 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0b23f3202f05fe743814e4c7aa94a76e, type: 3}
   - {fileID: 8300000, guid: 2ccf60a8308bd5244a6d59cca0743dc8, type: 3}
   - {fileID: 8300000, guid: 9248c88c7105f034c86f58e71f211189, type: 3}
-  endPosition: 228
+  endPosition: 263
   numHappyScenes: 3
   numNeutralScenes: 5
   numSadScenes: 7
   happyScore: 58
   neutralScore: 29
---- !u!114 &372468777
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 372468773}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73e49df90074f4b52be397bda27ef067, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  key: kid
 --- !u!1 &410797995
 GameObject:
   m_ObjectHideFlags: 0
