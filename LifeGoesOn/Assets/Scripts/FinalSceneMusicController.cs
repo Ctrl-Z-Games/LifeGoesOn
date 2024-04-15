@@ -13,14 +13,19 @@ public class FinalSceneMusicController : MonoBehaviour
     public AudioClip[] seniorMusic;
     void Start()
     {
+        StartCoroutine(PlayAllMusic());
+    }
+
+    private IEnumerator PlayAllMusic()
+    {
         string[] categories = { "baby", "kid", "teen", "adult", "senior" };
         foreach (string category in categories)
         {
             string result = PlayerPrefs.GetString(category, "neutral"); // Default to neutral
-            PlayMusicForCategory(category, result);
+            yield return StartCoroutine(PlayMusicForCategory(category, result));
         }
     }
-    private void PlayMusicForCategory(string category, string result)
+    private IEnumerator PlayMusicForCategory(string category, string result)
     {
         AudioClip clipToPlay = null;
         switch (category)
@@ -46,7 +51,7 @@ public class FinalSceneMusicController : MonoBehaviour
         {
             audioSource.clip = clipToPlay;
             audioSource.Play();
-            // Consider waiting for one clip to finish before starting the next if needed
+            yield return new WaitForSeconds(clipToPlay.length); // Wait for the clip to finish
         }
     }
 
