@@ -21,7 +21,7 @@ public class ScoreDisplay : MonoBehaviour {
         scoreDisp.text = "Score: 0";
     }
 
-    public void UpdateScore(int score) {
-        scoreDisp.text = "Score: " + score.ToString();
+    public void Update() {
+        scoreDisp.text = "Score: " + GameManager.instance.currentScore.ToString();
     }
 }
