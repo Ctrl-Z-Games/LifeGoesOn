@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class NoteObject : MonoBehaviour
@@ -9,15 +7,15 @@ public class NoteObject : MonoBehaviour
     private KeyCode bannedKey = KeyCode.Escape;
 	private Animator anim, shadowAnim;
     private Collider2D player;
-
+    
     private void Start() {
         anim = GetComponent<Animator>();
         shadowAnim = transform.GetChild(0).GetComponent<Animator>();
     }
 
     public void setKeyToPress(KeyCode key, KeyCode banned = KeyCode.Escape) {
-        this.keyToPress = key;
-        this.bannedKey = banned;
+        keyToPress = key;
+        bannedKey = banned;
     }
 
     private void Update() {
@@ -28,19 +26,15 @@ public class NoteObject : MonoBehaviour
             if (Input.GetKeyDown(keyToPress) && !Input.GetKeyDown(bannedKey)) {
                 if (Mathf.Abs(distanceBetweenObjects) < 0.25) {
                     GameManager.instance.PerfectHit();
-                    anim.Play("clicked", 0, 0);
-                    shadowAnim.Play("clicked", 0, 0);
                 } else if (Mathf.Abs(distanceBetweenObjects) < 0.5) {
                     GameManager.instance.GoodHit();
-                    anim.Play("clicked", 0, 0);
-                    shadowAnim.Play("clicked", 0, 0);
                 }
                 else if (Mathf.Abs(distanceBetweenObjects) < 1.0) {
                     GameManager.instance.OkHit();
-                    anim.Play("clicked", 0, 0);
-                    shadowAnim.Play("clicked", 0, 0);
                 }
                 pressedState = 2;
+                anim.Play("clicked", 0, 0);
+                shadowAnim.Play("clicked", 0, 0);
             }
 
             if (Input.GetKeyDown(bannedKey)) {
