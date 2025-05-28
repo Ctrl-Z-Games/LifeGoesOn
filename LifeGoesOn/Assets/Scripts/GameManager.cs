@@ -8,11 +8,19 @@ public class GameManager : MonoBehaviour
     public AudioSource backgroundMusic;
     public bool isGameActive;
     public static GameManager instance;
+
+    [Header("Accuracy Scoring")]
     public int currentScore;
     private int OkHitScore = 1;
     private int GoodHitScore = 2;
     private int PerfectHitScore = 3;
     private int FailHitScore = -2;
+    // ok and fail are outside range
+    public float OkHitRange = 2.0f;
+    public float GoodHitRange = 1.5f;
+    public float PerfectHitRange = 0.7f;
+
+    [Header("Accuracy Feedback")]
     public GameObject accuracyPrefab;
     public float accuracyHeight = 2.0f;
     public Sprite fail, ok, good, perfect;

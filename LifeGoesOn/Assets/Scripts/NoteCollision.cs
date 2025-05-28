@@ -12,19 +12,18 @@ public class NoteCollision : MonoBehaviour {
         if (hit) {
             NoteObject note = hit.collider.gameObject.GetComponent<NoteObject>();
             float dist = Mathf.Abs(note.transform.position.x - transform.position.x);
-            Debug.Log(dist);
-
-            if (note.noteType == noteType) {
+            if (note.noteType == noteType && !note.clicked) {
                 ScoreHit(dist);
                 note.ClickedAnim();
+                note.clicked = true;
             }
         }
     }
 
     private void ScoreHit(float dist) { // scores the hit of the note
-        if (dist < 0.7f) {
+        if (dist < GameManager.instance.PerfectHitRange) {
             GameManager.instance.PerfectHit();
-        } else if (dist < 1.5f) {
+        } else if (dist < GameManager.instance.GoodHitRange) {
             GameManager.instance.GoodHit();
         } else {
             GameManager.instance.OkHit();

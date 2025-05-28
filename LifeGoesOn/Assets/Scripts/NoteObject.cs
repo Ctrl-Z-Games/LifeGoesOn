@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class NoteObject : MonoBehaviour
@@ -6,12 +7,30 @@ public class NoteObject : MonoBehaviour
     //private KeyCode keyToPress;
     //private KeyCode bannedKey = KeyCode.Escape;
 	private Animator anim, shadowAnim;
+    private SpriteRenderer sr;
     public int noteType;
-    //private Collider2D player;
+    public bool clicked = false;
+    private Collider2D player;
     
     private void Start() {
         anim = GetComponent<Animator>();
         shadowAnim = transform.GetChild(0).GetComponent<Animator>();
+        sr = GetComponent<SpriteRenderer>();
+        sr.color = new Color(0.8f, 0.8f, 0.8f, 0.65f);
+    }
+
+    public void Update() {
+        if (player) {
+            float dist = Mathf.Abs(transform.position.x - player.transform.position.x);
+            if (dist < GameManager.instance.PerfectHitRange) { sr.color = Color.white; }
+            else if (dist < GameManager.instance.GoodHitRange) { sr.color = 0.9f * Color.white; }
+            else if (dist <= GameManager.instance.OkHitRange) { sr.color = new Color(0.8f, 0.8f, 0.8f, 0.75f); }
+            else {
+                GameManager.instance.FailHit();
+                clicked = true;
+                player = null;
+            }
+        }
     }
 
     /* OLD COLLISION LOGIC
@@ -48,14 +67,6 @@ public class NoteObject : MonoBehaviour
 
         if (pressedState == 3) { GameManager.instance.FailHit(); pressedState = 2; }
     }
-    
-    // detect if the player object is in the hitbox area, if so, player can press the key
-    private void OnTriggerEnter2D(Collider2D other) {
-        if (other.tag == "Player") {
-            player = other;
-            pressedState = 1;
-        }
-    }
     */
 
     public void ClickedAnim() {
@@ -65,6 +76,13 @@ public class NoteObject : MonoBehaviour
 
     public void EndAnim() {
         gameObject.SetActive(false);
+    }
+
+    // detect if the player object is in the hitbox area, if so, player can press the key
+    private void OnTriggerEnter2D(Collider2D other) {
+        if (other.tag == "Player") {
+            player = other;
+        }
     }
 
     /*
