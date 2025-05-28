@@ -18,6 +18,7 @@ public class NoteObject : MonoBehaviour
         bannedKey = banned;
     }
 
+    /* OLD COLLISION LOGIC
     private void Update() {
         if (pressedState == 1) {
             //gameObject.SetActive(false);
@@ -46,12 +47,7 @@ public class NoteObject : MonoBehaviour
 
         if (pressedState == 3) { GameManager.instance.FailHit(); pressedState = 2; }
     }
-
-    public void EndAnim() {
-        gameObject.SetActive(false);
-    }
-
-
+    
     // detect if the player object is in the hitbox area, if so, player can press the key
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.tag == "Player") {
@@ -59,6 +55,17 @@ public class NoteObject : MonoBehaviour
             pressedState = 1;
         }
     }
+    */
+
+    public void ClickedAnim() {
+        anim.Play("clicked", 0, 0);
+        shadowAnim.Play("clicked", 0, 0);
+    }
+
+    public void EndAnim() {
+        gameObject.SetActive(false);
+    }
+
     /*
     private void OnTriggerExit2D(Collider2D other)
     {
