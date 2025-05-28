@@ -20,24 +20,28 @@ public class placeInMap : MonoBehaviour
 
                 case 1: // bottom Q
                     obj = Instantiate(qHitbox, transform);
+                    obj.layer = 3;
                     obj.transform.position = transform.position + new Vector3(i * horizontalSpaceMod, 0.4f);
-                    obj.AddComponent<NoteObject>().setKeyToPress(KeyCode.Q, KeyCode.P);
+                    obj.AddComponent<NoteObject>().noteType = 1;
                     break;
 
                 case 2: // top P
                     obj = Instantiate(pHitbox, transform);
+                    obj.layer = 3;
                     obj.transform.position = transform.position + new Vector3(i * horizontalSpaceMod, 2.0f);
-                    obj.AddComponent<NoteObject>().setKeyToPress(KeyCode.P, KeyCode.Q);
+                    obj.AddComponent<NoteObject>().noteType = 2;
                     break;
 
                 case 3: // both Q + P
                     obj = Instantiate(qHitbox, transform);
+                    obj.layer = 3;
                     obj.transform.position = transform.position + new Vector3(i * horizontalSpaceMod, 0.4f);
-                    obj.AddComponent<NoteObject>().setKeyToPress(KeyCode.Q);
+                    obj.AddComponent<NoteObject>().noteType = 3;
 
                     obj = Instantiate(pHitbox, transform);
+                    obj.layer = 3;
                     obj.transform.position = transform.position + new Vector3(i * horizontalSpaceMod, 2.0f);
-                    obj.AddComponent<NoteObject>().setKeyToPress(KeyCode.P);
+                    obj.AddComponent<NoteObject>().noteType = 3;
                     break;
             }
         }

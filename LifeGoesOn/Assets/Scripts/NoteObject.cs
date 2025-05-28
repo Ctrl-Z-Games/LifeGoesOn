@@ -2,23 +2,24 @@ using UnityEngine;
 
 public class NoteObject : MonoBehaviour
 {
-	private int pressedState = 0;
-    private KeyCode keyToPress;
-    private KeyCode bannedKey = KeyCode.Escape;
+	//private int pressedState = 0;
+    //private KeyCode keyToPress;
+    //private KeyCode bannedKey = KeyCode.Escape;
 	private Animator anim, shadowAnim;
-    private Collider2D player;
+    public int noteType;
+    //private Collider2D player;
     
     private void Start() {
         anim = GetComponent<Animator>();
         shadowAnim = transform.GetChild(0).GetComponent<Animator>();
     }
 
+    /* OLD COLLISION LOGIC
     public void setKeyToPress(KeyCode key, KeyCode banned = KeyCode.Escape) {
         keyToPress = key;
         bannedKey = banned;
     }
 
-    /* OLD COLLISION LOGIC
     private void Update() {
         if (pressedState == 1) {
             //gameObject.SetActive(false);
