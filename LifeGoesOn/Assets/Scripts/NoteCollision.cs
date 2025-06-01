@@ -1,7 +1,11 @@
 using UnityEngine;
 
 public class NoteCollision : MonoBehaviour {
-    private Vector2 hitZone = new(2, 2);
+    private Vector2 hitZone;
+
+    private void Start() {
+        hitZone = GameManager.instance.OkHitRange * Vector2.one;
+    }
 
     private void Update() {
         if (Input.GetKeyDown(KeyCode.Q)) {

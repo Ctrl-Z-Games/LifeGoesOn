@@ -16,20 +16,15 @@ public class NoteObject : MonoBehaviour
         anim = GetComponent<Animator>();
         shadowAnim = transform.GetChild(0).GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
-        sr.color = new Color(0.8f, 0.8f, 0.8f, 0.65f);
+        sr.color = new Color(0.7f, 0.7f, 0.7f, 0.65f);
     }
 
     public void Update() {
         if (player) {
             float dist = Mathf.Abs(transform.position.x - player.transform.position.x);
             if (dist < GameManager.instance.PerfectHitRange) { sr.color = Color.white; }
-            else if (dist < GameManager.instance.GoodHitRange) { sr.color = 0.9f * Color.white; }
-            else if (dist <= GameManager.instance.OkHitRange) { sr.color = new Color(0.8f, 0.8f, 0.8f, 0.75f); }
-            else {
-                //GameManager.instance.FailHit();
-                //clicked = true;
-                //player = null;
-            }
+            else if (dist < GameManager.instance.GoodHitRange) { sr.color = 0.85f * Color.white; }
+            else if (dist <= GameManager.instance.OkHitRange) { sr.color = new Color(0.75f, 0.75f, 0.75f, 0.70f); }
         }
     }
 
