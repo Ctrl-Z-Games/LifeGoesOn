@@ -8,11 +8,19 @@ public class GameManager : MonoBehaviour
     public AudioSource backgroundMusic;
     public bool isGameActive;
     public static GameManager instance;
+
+    [Header("Accuracy Scoring")]
     public int currentScore;
     private int OkHitScore = 1;
     private int GoodHitScore = 2;
     private int PerfectHitScore = 3;
     private int FailHitScore = -2;
+    // fail are outside range
+    public float OkHitRange = 1.5f;
+    public float GoodHitRange = 1.0f;
+    public float PerfectHitRange = 0.6f;
+
+    [Header("Accuracy Feedback")]
     public GameObject accuracyPrefab;
     public float accuracyHeight = 2.0f;
     public Sprite fail, ok, good, perfect;
@@ -36,11 +44,14 @@ public class GameManager : MonoBehaviour
 
 	public string key;
 
-    
+
+    private void Awake() { // awake is called before start, and is needed in start methods
+        instance = this;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
-        instance = this;
         player = GameObject.Find("Player");
         accuracyObj = Instantiate(accuracyPrefab, player.transform);
         accuracyObj.transform.position = player.transform.position + new Vector3(0f, accuracyHeight);
@@ -48,7 +59,6 @@ public class GameManager : MonoBehaviour
         accSR = accuracyObj.GetComponent<SpriteRenderer>();
         timer = 0;
         //currentScore = 0;
-        
     }
 
     // Update is called once per frame

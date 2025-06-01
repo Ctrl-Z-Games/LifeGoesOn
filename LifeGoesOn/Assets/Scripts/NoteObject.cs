@@ -1,23 +1,37 @@
-using System.Collections;
-using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class NoteObject : MonoBehaviour
 {
-	private int pressedState = 0;
-    private KeyCode keyToPress;
-    private KeyCode bannedKey = KeyCode.Escape;
+	//private int pressedState = 0;
+    //private KeyCode keyToPress;
+    //private KeyCode bannedKey = KeyCode.Escape;
 	private Animator anim, shadowAnim;
+    private SpriteRenderer sr;
+    public int noteType;
+    public bool clicked = false;
     private Collider2D player;
-
+    
     private void Start() {
         anim = GetComponent<Animator>();
         shadowAnim = transform.GetChild(0).GetComponent<Animator>();
+        sr = GetComponent<SpriteRenderer>();
+        sr.color = new Color(0.7f, 0.7f, 0.7f, 0.65f);
     }
 
+    public void Update() {
+        if (player) {
+            float dist = Mathf.Abs(transform.position.x - player.transform.position.x);
+            if (dist < GameManager.instance.PerfectHitRange) { sr.color = Color.white; }
+            else if (dist < GameManager.instance.GoodHitRange) { sr.color = 0.85f * Color.white; }
+            else if (dist <= GameManager.instance.OkHitRange) { sr.color = new Color(0.75f, 0.75f, 0.75f, 0.70f); }
+        }
+    }
+
+    /* OLD COLLISION LOGIC
     public void setKeyToPress(KeyCode key, KeyCode banned = KeyCode.Escape) {
-        this.keyToPress = key;
-        this.bannedKey = banned;
+        keyToPress = key;
+        bannedKey = banned;
     }
 
     private void Update() {
@@ -28,19 +42,15 @@ public class NoteObject : MonoBehaviour
             if (Input.GetKeyDown(keyToPress) && !Input.GetKeyDown(bannedKey)) {
                 if (Mathf.Abs(distanceBetweenObjects) < 0.25) {
                     GameManager.instance.PerfectHit();
-                    anim.Play("clicked", 0, 0);
-                    shadowAnim.Play("clicked", 0, 0);
                 } else if (Mathf.Abs(distanceBetweenObjects) < 0.5) {
                     GameManager.instance.GoodHit();
-                    anim.Play("clicked", 0, 0);
-                    shadowAnim.Play("clicked", 0, 0);
                 }
                 else if (Mathf.Abs(distanceBetweenObjects) < 1.0) {
                     GameManager.instance.OkHit();
-                    anim.Play("clicked", 0, 0);
-                    shadowAnim.Play("clicked", 0, 0);
                 }
                 pressedState = 2;
+                anim.Play("clicked", 0, 0);
+                shadowAnim.Play("clicked", 0, 0);
             }
 
             if (Input.GetKeyDown(bannedKey)) {
@@ -52,19 +62,24 @@ public class NoteObject : MonoBehaviour
 
         if (pressedState == 3) { GameManager.instance.FailHit(); pressedState = 2; }
     }
+    */
+
+    public void ClickedAnim() {
+        anim.Play("clicked", 0, 0);
+        shadowAnim.Play("clicked", 0, 0);
+    }
 
     public void EndAnim() {
         gameObject.SetActive(false);
     }
 
-
     // detect if the player object is in the hitbox area, if so, player can press the key
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.tag == "Player") {
             player = other;
-            pressedState = 1;
         }
     }
+
     /*
     private void OnTriggerExit2D(Collider2D other)
     {
