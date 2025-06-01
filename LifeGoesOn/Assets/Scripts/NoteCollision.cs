@@ -8,9 +8,8 @@ public class NoteCollision : MonoBehaviour {
     }
 
     private void Update() {
-        if (Input.GetKeyDown(KeyCode.Q)) {
-            DetectCollision(1);
-        }
+        if (Input.GetKeyDown(KeyCode.Q)) { DetectCollision(1); }
+        if (Input.GetKeyDown(KeyCode.P)) { DetectCollision(2); }
     }
 
     private void DetectCollision(int noteType) { // detects collision when key is pressed. notetype determains which type of note

@@ -36,12 +36,12 @@ public class placeInMap : MonoBehaviour
                     obj = Instantiate(qHitbox, transform);
                     obj.layer = 3;
                     obj.transform.position = transform.position + new Vector3(i * horizontalSpaceMod, 0.4f);
-                    obj.AddComponent<NoteObject>().noteType = 3;
+                    obj.AddComponent<NoteObject>().noteType = 1;
 
                     obj = Instantiate(pHitbox, transform);
                     obj.layer = 3;
                     obj.transform.position = transform.position + new Vector3(i * horizontalSpaceMod, 2.0f);
-                    obj.AddComponent<NoteObject>().noteType = 3;
+                    obj.AddComponent<NoteObject>().noteType = 2;
                     break;
             }
         }
