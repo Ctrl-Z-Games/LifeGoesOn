@@ -9,7 +9,7 @@ public class NoteCollision : MonoBehaviour {
         }
     }
 
-    private void DetectCollision(int noteType) { //  detects collision when key is pressed. notetype determains which type of note
+    private void DetectCollision(int noteType) { // detects collision when key is pressed. notetype determains which type of note
         Collider2D[] hits = Physics2D.OverlapBoxAll(transform.position, hitZone, 0f, 8);
         foreach (Collider2D hit in hits) {
             if (hit) {
@@ -21,6 +21,13 @@ public class NoteCollision : MonoBehaviour {
                     note.clicked = true;
                 }
             }
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other) { // detects if a note has exited before hitting any notes
+        NoteObject note = other.GetComponent<NoteObject>();
+        if (note && !note.clicked) {
+            GameManager.instance.FailHit();
         }
     }
 
