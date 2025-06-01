@@ -26,9 +26,9 @@ public class NoteObject : MonoBehaviour
             else if (dist < GameManager.instance.GoodHitRange) { sr.color = 0.9f * Color.white; }
             else if (dist <= GameManager.instance.OkHitRange) { sr.color = new Color(0.8f, 0.8f, 0.8f, 0.75f); }
             else {
-                GameManager.instance.FailHit();
-                clicked = true;
-                player = null;
+                //GameManager.instance.FailHit();
+                //clicked = true;
+                //player = null;
             }
         }
     }

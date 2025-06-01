@@ -1,6 +1,8 @@
 using UnityEngine;
 
 public class NoteCollision : MonoBehaviour {
+    private Vector2 hitZone = new(2, 2);
+
     private void Update() {
         if (Input.GetKeyDown(KeyCode.Q)) {
             DetectCollision(1);
@@ -8,14 +10,16 @@ public class NoteCollision : MonoBehaviour {
     }
 
     private void DetectCollision(int noteType) { //  detects collision when key is pressed. notetype determains which type of note
-        RaycastHit2D hit = Physics2D.CircleCast(transform.position, 2, transform.right, 0, 8);
-        if (hit) {
-            NoteObject note = hit.collider.gameObject.GetComponent<NoteObject>();
-            float dist = Mathf.Abs(note.transform.position.x - transform.position.x);
-            if (note.noteType == noteType && !note.clicked) {
-                ScoreHit(dist);
-                note.ClickedAnim();
-                note.clicked = true;
+        Collider2D[] hits = Physics2D.OverlapBoxAll(transform.position, hitZone, 0f, 8);
+        foreach (Collider2D hit in hits) {
+            if (hit) {
+                NoteObject note = hit.gameObject.GetComponent<NoteObject>();
+                float dist = Mathf.Abs(note.transform.position.x - transform.position.x);
+                if (note.noteType == noteType && !note.clicked) {
+                    ScoreHit(dist);
+                    note.ClickedAnim();
+                    note.clicked = true;
+                }
             }
         }
     }
