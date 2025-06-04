@@ -22,9 +22,6 @@ public class DataSet : MonoBehaviour
                 break;
 
 
-
-
-
             case "ToTeenSad":
                 Data.tweOk = true;
                 break;

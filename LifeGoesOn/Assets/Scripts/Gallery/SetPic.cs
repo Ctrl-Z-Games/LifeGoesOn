@@ -24,9 +24,6 @@ public class SetPic : MonoBehaviour
         if (Data.twePrefect) { buttons[5].interactable = true; }
 
 
-
-
-
         if (Data.threeOk) { buttons[6].interactable = true; }
         if (Data.threeGood) { buttons[7].interactable = true; }
         if (Data.threePrefect) { buttons[8].interactable = true; }
