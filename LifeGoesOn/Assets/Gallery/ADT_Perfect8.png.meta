@@ -1,0 +1,452 @@
+fileFormatVersion: 2
+guid: 323a39e8c9d39c04c91164d125d323c1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2032422173874415191
+    second: ADT_Perfect8_0
+  - first:
+      213: 7927041202186507752
+    second: ADT_Perfect8_1
+  - first:
+      213: -4277905240674275766
+    second: ADT_Perfect8_2
+  - first:
+      213: 2703474287410100470
+    second: ADT_Perfect8_3
+  - first:
+      213: 8226304551405664883
+    second: ADT_Perfect8_4
+  - first:
+      213: 4835341004166167209
+    second: ADT_Perfect8_5
+  - first:
+      213: 6488981144424860362
+    second: ADT_Perfect8_6
+  - first:
+      213: -492850484132641093
+    second: ADT_Perfect8_7
+  - first:
+      213: -6777075897414199597
+    second: ADT_Perfect8_8
+  - first:
+      213: 5217383326279126332
+    second: ADT_Perfect8_9
+  - first:
+      213: -3142933748622086633
+    second: ADT_Perfect8_10
+  - first:
+      213: -6374087573560379551
+    second: ADT_Perfect8_11
+  - first:
+      213: -7815320580140582446
+    second: ADT_Perfect8_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ADT_Perfect8_0
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 540
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 756696be23d943c10800000000000000
+      internalID: 2032422173874415191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ADT_Perfect8_1
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 544
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e5563069f1820e60800000000000000
+      internalID: 7927041202186507752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ADT_Perfect8_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4ee3d259d3d1a4c0800000000000000
+      internalID: -4277905240674275766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ADT_Perfect8_3
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 345
+        width: 235
+        height: 259
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f83b707a8ba48520800000000000000
+      internalID: 2703474287410100470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ADT_Perfect8_4
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 550
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37ab6b89764b92270800000000000000
+      internalID: 8226304551405664883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ADT_Perfect8_5
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 529
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9aa743946059a1340800000000000000
+      internalID: 4835341004166167209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ADT_Perfect8_6
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 512
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acac6a388fd7d0a50800000000000000
+      internalID: 6488981144424860362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ADT_Perfect8_7
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 498
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb605ed881b0929f0800000000000000
+      internalID: -492850484132641093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ADT_Perfect8_8
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 508
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d6d3c6b06df2f1a0800000000000000
+      internalID: -6777075897414199597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ADT_Perfect8_9
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 480
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3dc9eb0e7ed76840800000000000000
+      internalID: 5217383326279126332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ADT_Perfect8_10
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 483
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71e2bc8586e0264d0800000000000000
+      internalID: -3142933748622086633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ADT_Perfect8_11
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 427
+        width: 35
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 167b3ba8f11ba87a0800000000000000
+      internalID: -6374087573560379551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ADT_Perfect8_12
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 439
+        width: 36
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d9bbe6f6576a8390800000000000000
+      internalID: -7815320580140582446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 9816751b726daa64f8436fb4f43e21e3
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      ADT_Perfect8_0: 2032422173874415191
+      ADT_Perfect8_1: 7927041202186507752
+      ADT_Perfect8_10: -3142933748622086633
+      ADT_Perfect8_11: -6374087573560379551
+      ADT_Perfect8_12: -7815320580140582446
+      ADT_Perfect8_2: -4277905240674275766
+      ADT_Perfect8_3: 2703474287410100470
+      ADT_Perfect8_4: 8226304551405664883
+      ADT_Perfect8_5: 4835341004166167209
+      ADT_Perfect8_6: 6488981144424860362
+      ADT_Perfect8_7: -492850484132641093
+      ADT_Perfect8_8: -6777075897414199597
+      ADT_Perfect8_9: 5217383326279126332
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
