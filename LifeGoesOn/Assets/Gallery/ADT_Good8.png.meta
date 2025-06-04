@@ -1,0 +1,506 @@
+fileFormatVersion: 2
+guid: 310410d466ecdc243ac6223964b1e81f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2140402970286496772
+    second: ADT_Good8_0
+  - first:
+      213: 4102418870162102846
+    second: ADT_Good8_1
+  - first:
+      213: 6330565161567299947
+    second: ADT_Good8_2
+  - first:
+      213: 6116121698143068306
+    second: ADT_Good8_3
+  - first:
+      213: 5719173988957229292
+    second: ADT_Good8_4
+  - first:
+      213: 3807272163287875464
+    second: ADT_Good8_5
+  - first:
+      213: 7570925154182276914
+    second: ADT_Good8_6
+  - first:
+      213: 3547781489688599391
+    second: ADT_Good8_7
+  - first:
+      213: -7704234022470993130
+    second: ADT_Good8_8
+  - first:
+      213: -6840725673755144217
+    second: ADT_Good8_9
+  - first:
+      213: -7839723617061380439
+    second: ADT_Good8_10
+  - first:
+      213: 6384084679140969584
+    second: ADT_Good8_11
+  - first:
+      213: -5377978304923223254
+    second: ADT_Good8_12
+  - first:
+      213: -8023545264402167792
+    second: ADT_Good8_13
+  - first:
+      213: 6998752064189572168
+    second: ADT_Good8_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 3
+  spriteExtrude: 0
+  spriteMeshType: 0
+  alignment: 1
+  spritePivot: {x: 0, y: 1}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ADT_Good8_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf3e1efb6d2cb42e0800000000000000
+      internalID: -2140402970286496772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ADT_Good8_1
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 583
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3a1fd31a38bee830800000000000000
+      internalID: 4102418870162102846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ADT_Good8_2
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 562
+        width: 37
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b69aea2497faad750800000000000000
+      internalID: 6330565161567299947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ADT_Good8_3
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 540
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29060e4a744d0e450800000000000000
+      internalID: 6116121698143068306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ADT_Good8_4
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 544
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce0137401769e5f40800000000000000
+      internalID: 5719173988957229292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ADT_Good8_5
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 345
+        width: 235
+        height: 236
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88fb1085cd526d430800000000000000
+      internalID: 3807272163287875464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ADT_Good8_6
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 550
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 237aa14b054511960800000000000000
+      internalID: 7570925154182276914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ADT_Good8_7
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 529
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5b5899c7704c3130800000000000000
+      internalID: 3547781489688599391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ADT_Good8_8
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 512
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61b3320b9ff051590800000000000000
+      internalID: -7704234022470993130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ADT_Good8_9
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 498
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ef0ee15e3cd011a0800000000000000
+      internalID: -6840725673755144217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ADT_Good8_10
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 508
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9aed0db28e4b33390800000000000000
+      internalID: -7839723617061380439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ADT_Good8_11
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 480
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07c063cf033d89850800000000000000
+      internalID: 6384084679140969584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ADT_Good8_12
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 483
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2b3b45b9359d55b0800000000000000
+      internalID: -5377978304923223254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ADT_Good8_13
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 427
+        width: 35
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0188a04b714a6a090800000000000000
+      internalID: -8023545264402167792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ADT_Good8_14
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 439
+        width: 36
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8442d01ebef802160800000000000000
+      internalID: 6998752064189572168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline:
+    - - {x: -248.5, y: -302.5}
+      - {x: 248.5, y: -302.5}
+      - {x: 248.5, y: 302.5}
+      - {x: -248.5, y: 302.5}
+    physicsShape: []
+    bones: []
+    spriteID: 97da1b9d5f96a094c8de662d9f6e31c7
+    internalID: 1161223957
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      ADT_Good8_0: -2140402970286496772
+      ADT_Good8_1: 4102418870162102846
+      ADT_Good8_10: -7839723617061380439
+      ADT_Good8_11: 6384084679140969584
+      ADT_Good8_12: -5377978304923223254
+      ADT_Good8_13: -8023545264402167792
+      ADT_Good8_14: 6998752064189572168
+      ADT_Good8_2: 6330565161567299947
+      ADT_Good8_3: 6116121698143068306
+      ADT_Good8_4: 5719173988957229292
+      ADT_Good8_5: 3807272163287875464
+      ADT_Good8_6: 7570925154182276914
+      ADT_Good8_7: 3547781489688599391
+      ADT_Good8_8: -7704234022470993130
+      ADT_Good8_9: -6840725673755144217
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
