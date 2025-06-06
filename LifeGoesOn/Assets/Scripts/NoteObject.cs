@@ -6,7 +6,7 @@ public class NoteObject : MonoBehaviour
 	//private int pressedState = 0;
     //private KeyCode keyToPress;
     //private KeyCode bannedKey = KeyCode.Escape;
-	private Animator anim, shadowAnim;
+	private Animator anim;
     private SpriteRenderer sr;
     public int noteType;
     public bool clicked = false;
@@ -14,7 +14,7 @@ public class NoteObject : MonoBehaviour
     
     private void Start() {
         anim = GetComponent<Animator>();
-        shadowAnim = transform.GetChild(0).GetComponent<Animator>();
+        // shadowAnim = transform.GetChild(0).GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
         sr.color = new Color(0.7f, 0.7f, 0.7f, 0.65f);
     }
@@ -66,7 +66,7 @@ public class NoteObject : MonoBehaviour
 
     public void ClickedAnim() {
         anim.Play("clicked", 0, 0);
-        shadowAnim.Play("clicked", 0, 0);
+        //shadowAnim.Play("clicked", 0, 0);
     }
 
     public void EndAnim() {
