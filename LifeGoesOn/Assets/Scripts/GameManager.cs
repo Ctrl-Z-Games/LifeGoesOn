@@ -29,10 +29,10 @@ public class GameManager : MonoBehaviour
     private GameObject player;
     private SpriteRenderer accSR;
     private int timer;
-    public AudioSource voiceoverSource; 
-    public AudioClip[] voiceoverClips; 
-    private int voiceoverIndex = 0;
-    private bool isVoiceoverPlaying = false;
+    //public AudioSource voiceoverSource; 
+    //public AudioClip[] voiceoverClips; 
+    //private int voiceoverIndex = 0;
+    //private bool isVoiceoverPlaying = false;
     private bool accJuice = false;
     
     public float endPosition;
@@ -75,10 +75,9 @@ public class GameManager : MonoBehaviour
                 
                 backgroundMusic.Play();
                 
-                if (!isVoiceoverPlaying)
-                {
-                    StartCoroutine(PlayVoiceover());
-                }
+                //if (!isVoiceoverPlaying) {
+                //    StartCoroutine(PlayVoiceover());
+                //}
             }
         }
 
@@ -115,6 +114,8 @@ public class GameManager : MonoBehaviour
             
         }
     }
+
+    /*
     private IEnumerator PlayVoiceover()
     {
         foreach (var clip in voiceoverClips)
@@ -126,6 +127,7 @@ public class GameManager : MonoBehaviour
             yield return new WaitForSeconds(clip.length);
         }
     }
+    */
 
 	public void DetermineResult()
     {
