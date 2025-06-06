@@ -10,38 +10,31 @@ public class placeInMap : MonoBehaviour
 
     // Start is called before the first frame update
     void Start() {
-        string[] map = mapFile.text.Split(new[] { "\r", "\n"}, System.StringSplitOptions.RemoveEmptyEntries); // read from txt file
+        string[] map = mapFile.text.Split(new[] {"\r", "\n"}, System.StringSplitOptions.RemoveEmptyEntries); // read from txt file
         for (int i = 0; i < map.Length; i++) {
-            switch (map[i].Trim()) { // instantiates new hitbox and set it's position
-                case "00":
-                    break;
+            string block = map[i].Trim();
 
-                case "10": // bottom Q
-                    obj = Instantiate(qHitbox, transform);
-                    obj.layer = 3;
-                    obj.transform.position = transform.position + new Vector3(i * horizontalSpaceMod, 0.4f);
-                    obj.AddComponent<NoteObject>().noteType = 1;
-                    break;
+            if (block.Length != 2) {
+                Debug.LogWarning($"Bad block {block} at index {i}");
+                return;
+            }
+            int bot = block[0] - '0';
+            int top = block[1] - '0';
 
-                case "01": // top P
-                    obj = Instantiate(pHitbox, transform);
-                    obj.layer = 3;
-                    obj.transform.position = transform.position + new Vector3(i * horizontalSpaceMod, 2.0f);
-                    obj.AddComponent<NoteObject>().noteType = 2;
-                    break;
+            if (bot == 1) {
+                PlaceBeat(qHitbox, 1, i, 0.4f);
+            }
 
-                case "11": // both Q + P
-                    obj = Instantiate(qHitbox, transform);
-                    obj.layer = 3;
-                    obj.transform.position = transform.position + new Vector3(i * horizontalSpaceMod, 0.4f);
-                    obj.AddComponent<NoteObject>().noteType = 1;
-
-                    obj = Instantiate(pHitbox, transform);
-                    obj.layer = 3;
-                    obj.transform.position = transform.position + new Vector3(i * horizontalSpaceMod, 2.0f);
-                    obj.AddComponent<NoteObject>().noteType = 2;
-                    break;
+            if (top == 1) {
+                PlaceBeat(pHitbox, 2, i, 2.0f);
             }
         }
+    }
+
+    void PlaceBeat(GameObject hitBox, int noteType, int spacing, float vPosition) {
+        obj = Instantiate(hitBox, transform);
+        obj.layer = 3;
+        obj.transform.position = transform.position + new Vector3(spacing * horizontalSpaceMod, vPosition);
+        obj.AddComponent<NoteObject>().noteType = noteType;
     }
 }
