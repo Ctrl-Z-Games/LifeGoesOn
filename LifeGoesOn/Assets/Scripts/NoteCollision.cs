@@ -45,7 +45,7 @@ public class NoteCollision : MonoBehaviour {
         }
     }
 
-    private void PlayBuffer(List<NoteObject> buffer) {
+    private void PlayBuffer(List<NoteObject> buffer) { // plays the note buffer (so held notes play the animation at the same time)
         foreach (NoteObject n in buffer) { 
             n.ClickedAnim();
         }
