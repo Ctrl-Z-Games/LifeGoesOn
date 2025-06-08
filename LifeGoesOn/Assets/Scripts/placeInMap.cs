@@ -6,10 +6,12 @@ public class placeInMap : MonoBehaviour
     [SerializeField] private TextAsset mapFile;
     [SerializeField] private GameObject qHitbox;
     [SerializeField] private GameObject qHeldStartbox;
+    [SerializeField] private GameObject qHeldMidbox;
     [SerializeField] private GameObject qHeldEndbox;
     [SerializeField] private Vector2 qHeldOffsets;
     [SerializeField] private GameObject pHitbox;
     [SerializeField] private GameObject pHeldStartbox;
+    [SerializeField] private GameObject pHeldMidbox;
     [SerializeField] private GameObject pHeldEndbox;
     [SerializeField] private Vector2 pHeldOffsets;
 
@@ -36,6 +38,9 @@ public class placeInMap : MonoBehaviour
                 case 3:
                     PlaceBeat(qHeldEndbox, 3, i, 0.4f, qHeldOffsets.y);
                     break;
+                case 4:
+                    PlaceBeat(qHeldMidbox, 13, i, -0.66f, 0.0f);
+                    break;
                 default:
                     break;
             }
@@ -49,6 +54,9 @@ public class placeInMap : MonoBehaviour
                     break;
                 case 3:
                     PlaceBeat(pHeldEndbox, 4, i, 2.0f, pHeldOffsets.y);
+                    break;
+                case 4:
+                    PlaceBeat(pHeldMidbox, 14, i, -0.66f, 0.0f);
                     break;
                 default:
                     break;
