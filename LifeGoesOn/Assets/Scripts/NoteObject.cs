@@ -7,7 +7,6 @@ public class NoteObject : MonoBehaviour
     //private KeyCode keyToPress;
     //private KeyCode bannedKey = KeyCode.Escape;
 	private Animator anim;
-    private SpriteRenderer sr;
     public int noteType;
     public bool clicked = false;
     private Collider2D player;
@@ -15,16 +14,22 @@ public class NoteObject : MonoBehaviour
     private void Start() {
         anim = GetComponent<Animator>();
         // shadowAnim = transform.GetChild(0).GetComponent<Animator>();
-        sr = GetComponent<SpriteRenderer>();
-        sr.color = new Color(0.7f, 0.7f, 0.7f, 0.65f);
+        ChangeColour(new Color(0.7f, 0.7f, 0.7f, 0.65f));
     }
 
-    public void Update() {
+    private void Update() {
         if (player) {
             float dist = Mathf.Abs(transform.position.x - player.transform.position.x);
-            if (dist < GameManager.instance.PerfectHitRange) { sr.color = Color.white; }
-            else if (dist < GameManager.instance.GoodHitRange) { sr.color = 0.85f * Color.white; }
-            else if (dist <= GameManager.instance.OkHitRange) { sr.color = new Color(0.75f, 0.75f, 0.75f, 0.70f); }
+            if (dist < GameManager.instance.PerfectHitRange) { ChangeColour(Color.white); }
+            else if (dist < GameManager.instance.GoodHitRange) { ChangeColour(0.85f * Color.white); }
+            else if (dist <= GameManager.instance.OkHitRange) { ChangeColour(new Color(0.75f, 0.75f, 0.75f, 0.70f)); }
+        }
+    }
+
+    private void ChangeColour(Color colour) {
+        SpriteRenderer[] srList = GetComponentsInChildren<SpriteRenderer>();
+        foreach (SpriteRenderer sr in srList) {
+            sr.color = colour;
         }
     }
 
