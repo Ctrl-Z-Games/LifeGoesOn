@@ -40,13 +40,13 @@ public class placeInMap : MonoBehaviour
 
             switch (top) {
                 case 1:
-                    PlaceBeat(pHitbox, 1, i, 2.0f);
+                    PlaceBeat(pHitbox, 2, i, 2.0f);
                     break;
                 case 2:
-                    PlaceBeat(pHeldStartbox, 10, i, 2.0f);
+                    PlaceBeat(pHeldStartbox, 20, i, 2.0f);
                     break;
                 case 3:
-                    PlaceBeat(pHeldEndbox, 11, i, 2.0f);
+                    PlaceBeat(pHeldEndbox, 21, i, 2.0f);
                     break;
                 default:
                     break;
