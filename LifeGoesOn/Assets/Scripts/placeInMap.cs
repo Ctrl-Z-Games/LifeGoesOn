@@ -39,7 +39,7 @@ public class placeInMap : MonoBehaviour
                     PlaceBeat(qHeldEndbox, 3, i, 0.4f, qHeldOffsets.y);
                     break;
                 case 4:
-                    PlaceBeat(qHeldMidbox, 13, i, -0.66f, 0.0f);
+                    PlaceBeat(qHeldMidbox, 23, i, -0.66f, 0.0f);
                     break;
                 default:
                     break;
@@ -56,7 +56,7 @@ public class placeInMap : MonoBehaviour
                     PlaceBeat(pHeldEndbox, 4, i, 2.0f, pHeldOffsets.y);
                     break;
                 case 4:
-                    PlaceBeat(pHeldMidbox, 14, i, -0.66f, 0.0f);
+                    PlaceBeat(pHeldMidbox, 24, i, -0.66f, 0.0f);
                     break;
                 default:
                     break;

@@ -33,6 +33,9 @@ public class NoteCollision : MonoBehaviour {
                     ScoreHit(dist);
                     buffer.Add(note);
                     note.clicked = true;
+                } else if (note.noteType == noteType + 20 && !note.clicked) {
+                    GameManager.instance.FailHit();
+                    note.clicked = true;
                 }
             }
         }
@@ -40,8 +43,13 @@ public class NoteCollision : MonoBehaviour {
 
     private void OnTriggerExit2D(Collider2D other) { // detects if a note has exited before hitting any notes
         NoteObject note = other.GetComponent<NoteObject>();
-        if (note && !note.clicked) {
-            GameManager.instance.FailHit();
+        if (note) {
+            if (note.noteType / 10 == 2) { // middle held note
+                if (note.noteType - 20 == 3) { botAnimBuffer.Add(note); }
+                else if (note.noteType - 20 == 4) { topAnimBuffer.Add(note); }
+            } else if (!note.clicked && note.noteType/10 == 2) {
+                GameManager.instance.FailHit();
+            }
         }
     }
 
