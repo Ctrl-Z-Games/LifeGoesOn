@@ -2,11 +2,14 @@ using UnityEngine;
 
 public class placeInMap : MonoBehaviour
 {
-    public float horizontalSpaceMod = 2.74f;
-    public TextAsset mapFile;
-    public GameObject qHitbox, pHitbox;
-
-    private GameObject obj;
+    [SerializeField] private float horizontalSpaceMod = 2.74f;
+    [SerializeField] private TextAsset mapFile;
+    [SerializeField] private GameObject qHitbox;
+    [SerializeField] private GameObject qHeldStartbox;
+    [SerializeField] private GameObject qHeldEndbox;
+    [SerializeField] private GameObject pHitbox;
+    [SerializeField] private GameObject pHeldStartbox;
+    [SerializeField] private GameObject pHeldEndbox;
 
     // Start is called before the first frame update
     void Start() {
@@ -21,18 +24,38 @@ public class placeInMap : MonoBehaviour
             int bot = block[0] - '0';
             int top = block[1] - '0';
 
-            if (bot == 1) {
-                PlaceBeat(qHitbox, 1, i, 0.4f);
+            switch (bot) {
+                case 1:
+                    PlaceBeat(qHitbox, 1, i, 0.4f);
+                    break;
+                case 2:
+                    PlaceBeat(qHeldStartbox, 10, i, 0.4f);
+                    break;
+                case 3:
+                    PlaceBeat(qHeldEndbox, 11, i, 0.4f);
+                    break;
+                default:
+                    break;
             }
 
-            if (top == 1) {
-                PlaceBeat(pHitbox, 2, i, 2.0f);
+            switch (top) {
+                case 1:
+                    PlaceBeat(pHitbox, 1, i, 2.0f);
+                    break;
+                case 2:
+                    PlaceBeat(pHeldStartbox, 10, i, 2.0f);
+                    break;
+                case 3:
+                    PlaceBeat(pHeldEndbox, 11, i, 2.0f);
+                    break;
+                default:
+                    break;
             }
         }
     }
 
     void PlaceBeat(GameObject hitBox, int noteType, int spacing, float vPosition) {
-        obj = Instantiate(hitBox, transform);
+        GameObject obj = Instantiate(hitBox, transform);
         obj.layer = 3;
         obj.transform.position = transform.position + new Vector3(spacing * horizontalSpaceMod, vPosition);
         obj.AddComponent<NoteObject>().noteType = noteType;
