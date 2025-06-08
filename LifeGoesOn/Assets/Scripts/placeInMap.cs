@@ -29,10 +29,10 @@ public class placeInMap : MonoBehaviour
                     PlaceBeat(qHitbox, 1, i, 0.4f);
                     break;
                 case 2:
-                    PlaceBeat(qHeldStartbox, 10, i, 0.4f);
+                    PlaceBeat(qHeldStartbox, 11, i, 0.4f);
                     break;
                 case 3:
-                    PlaceBeat(qHeldEndbox, 11, i, 0.4f);
+                    PlaceBeat(qHeldEndbox, 3, i, 0.4f);
                     break;
                 default:
                     break;
@@ -43,10 +43,10 @@ public class placeInMap : MonoBehaviour
                     PlaceBeat(pHitbox, 2, i, 2.0f);
                     break;
                 case 2:
-                    PlaceBeat(pHeldStartbox, 20, i, 2.0f);
+                    PlaceBeat(pHeldStartbox, 12, i, 2.0f);
                     break;
                 case 3:
-                    PlaceBeat(pHeldEndbox, 21, i, 2.0f);
+                    PlaceBeat(pHeldEndbox, 4, i, 2.0f);
                     break;
                 default:
                     break;
