@@ -7,9 +7,11 @@ public class placeInMap : MonoBehaviour
     [SerializeField] private GameObject qHitbox;
     [SerializeField] private GameObject qHeldStartbox;
     [SerializeField] private GameObject qHeldEndbox;
+    [SerializeField] private Vector2 qHeldOffsets;
     [SerializeField] private GameObject pHitbox;
     [SerializeField] private GameObject pHeldStartbox;
     [SerializeField] private GameObject pHeldEndbox;
+    [SerializeField] private Vector2 pHeldOffsets;
 
     // Start is called before the first frame update
     void Start() {
@@ -26,13 +28,13 @@ public class placeInMap : MonoBehaviour
 
             switch (bot) {
                 case 1:
-                    PlaceBeat(qHitbox, 1, i, 0.4f);
+                    PlaceBeat(qHitbox, 1, i, 0.4f, 0.0f);
                     break;
                 case 2:
-                    PlaceBeat(qHeldStartbox, 11, i, 0.4f);
+                    PlaceBeat(qHeldStartbox, 11, i, 0.4f, qHeldOffsets.x);
                     break;
                 case 3:
-                    PlaceBeat(qHeldEndbox, 3, i, 0.4f);
+                    PlaceBeat(qHeldEndbox, 3, i, 0.4f, qHeldOffsets.y);
                     break;
                 default:
                     break;
@@ -40,13 +42,13 @@ public class placeInMap : MonoBehaviour
 
             switch (top) {
                 case 1:
-                    PlaceBeat(pHitbox, 2, i, 2.0f);
+                    PlaceBeat(pHitbox, 2, i, 2.0f, 0.0f);
                     break;
                 case 2:
-                    PlaceBeat(pHeldStartbox, 12, i, 2.0f);
+                    PlaceBeat(pHeldStartbox, 12, i, 2.0f, pHeldOffsets.x);
                     break;
                 case 3:
-                    PlaceBeat(pHeldEndbox, 4, i, 2.0f);
+                    PlaceBeat(pHeldEndbox, 4, i, 2.0f, pHeldOffsets.y);
                     break;
                 default:
                     break;
@@ -54,10 +56,10 @@ public class placeInMap : MonoBehaviour
         }
     }
 
-    void PlaceBeat(GameObject hitBox, int noteType, int spacing, float vPosition) {
+    void PlaceBeat(GameObject hitBox, int noteType, int spacing, float vPosition, float hOffset) {
         GameObject obj = Instantiate(hitBox, transform);
         obj.layer = 3;
-        obj.transform.position = transform.position + new Vector3(spacing * horizontalSpaceMod, vPosition);
+        obj.transform.position = transform.position + new Vector3(spacing * horizontalSpaceMod + hOffset, vPosition);
         obj.AddComponent<NoteObject>().noteType = noteType;
     }
 }
