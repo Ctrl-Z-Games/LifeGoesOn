@@ -23,11 +23,16 @@ public class NoteCollision : MonoBehaviour {
             if (hit) {
                 NoteObject note = hit.gameObject.GetComponent<NoteObject>();
                 float dist = Mathf.Abs(note.transform.position.x - transform.position.x);
+
                 if (note.noteType == noteType && !note.clicked) {
                     ScoreHit(dist);
                     buffer.Add(note);
                     note.clicked = true;
                     PlayBuffer(buffer);
+                } else if (note.noteType == noteType + 10 && !note.clicked) {
+                    ScoreHit(dist);
+                    buffer.Add(note);
+                    note.clicked = true;
                 }
             }
         }
@@ -41,13 +46,10 @@ public class NoteCollision : MonoBehaviour {
     }
 
     private void PlayBuffer(List<NoteObject> buffer) {
-        Debug.Log(buffer.Count);
         foreach (NoteObject n in buffer) { 
             n.ClickedAnim();
         }
         buffer.Clear();
-        Debug.Log(buffer.Count);
-        Debug.Log(buffer);
     }
 
     private void ScoreHit(float dist) { // scores the hit of the note
