@@ -356,7 +356,15 @@ MonoBehaviour:
   horizontalSpaceMod: 2.73
   mapFile: {fileID: 4900000, guid: 9a0bf4d5859f8ac41a034a9300914a28, type: 3}
   qHitbox: {fileID: 7428657735169004488, guid: b62ad73a8a2fa4448a74c9984b9a6416, type: 3}
+  qHeldStartbox: {fileID: 4814857505291847719, guid: 3ced99742f1f2974b90b4763412b12c7, type: 3}
+  qHeldMidbox: {fileID: 0}
+  qHeldEndbox: {fileID: 8544780046359344911, guid: 1ea3ee6e5e3b43e4f826d71884b84cee, type: 3}
+  qHeldOffsets: {x: 0.3, y: -0.3}
   pHitbox: {fileID: 4238939194598820289, guid: 2e862156fd4c28846b87312b2ea90100, type: 3}
+  pHeldStartbox: {fileID: 8964986150352453375, guid: be17177a41f0e194e8aa53ae5cdecbbf, type: 3}
+  pHeldMidbox: {fileID: 0}
+  pHeldEndbox: {fileID: 548818877938077495, guid: bfc7b406ac0df1c44a6132b9e20db29c, type: 3}
+  pHeldOffsets: {x: 0.31, y: -0.31}
 --- !u!114 &372468776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1033,7 +1041,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: ed72d2ee8cf0efb44853159f273c04b0, type: 3}
+  m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: ed72d2ee8cf0efb44853159f273c04b0, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
