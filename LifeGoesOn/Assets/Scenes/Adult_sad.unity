@@ -357,12 +357,12 @@ MonoBehaviour:
   mapFile: {fileID: 4900000, guid: 9a0bf4d5859f8ac41a034a9300914a28, type: 3}
   qHitbox: {fileID: 7428657735169004488, guid: b62ad73a8a2fa4448a74c9984b9a6416, type: 3}
   qHeldStartbox: {fileID: 4814857505291847719, guid: 3ced99742f1f2974b90b4763412b12c7, type: 3}
-  qHeldMidbox: {fileID: 0}
+  qHeldMidbox: {fileID: 8066450710692533710, guid: c40d9b013e67f634c9abc2a20d2dbcbf, type: 3}
   qHeldEndbox: {fileID: 8544780046359344911, guid: 1ea3ee6e5e3b43e4f826d71884b84cee, type: 3}
   qHeldOffsets: {x: 0.3, y: -0.3}
   pHitbox: {fileID: 4238939194598820289, guid: 2e862156fd4c28846b87312b2ea90100, type: 3}
   pHeldStartbox: {fileID: 8964986150352453375, guid: be17177a41f0e194e8aa53ae5cdecbbf, type: 3}
-  pHeldMidbox: {fileID: 0}
+  pHeldMidbox: {fileID: 4700909226736580240, guid: 65ee79bdb4eaf6144bc9dbf9680dab0a, type: 3}
   pHeldEndbox: {fileID: 548818877938077495, guid: bfc7b406ac0df1c44a6132b9e20db29c, type: 3}
   pHeldOffsets: {x: 0.31, y: -0.31}
 --- !u!114 &372468776
