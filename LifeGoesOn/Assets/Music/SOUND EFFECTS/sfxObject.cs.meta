@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: cbf827eed5d16cf44a160acd38cc7761
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - generalClick: {fileID: 8300000, guid: b81637f476974d64ab99b25883ff751c, type: 3}
+  - failSound: {fileID: 8300000, guid: 2734e0628280bd2468ca4e09b996170c, type: 3}
+  - okSound: {fileID: 8300000, guid: f82be00bcccd2df41bb7a33fb329f798, type: 3}
+  - goodSound: {fileID: 8300000, guid: 069646d09b01ac94d93435649a07e5de, type: 3}
+  - perfectSound: {fileID: 8300000, guid: 53e4fc40fb0184a408efb5bd615512a3, type: 3}
+  - startSound: {fileID: 8300000, guid: dea9377186e670a43bc5e99564a5606f, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
