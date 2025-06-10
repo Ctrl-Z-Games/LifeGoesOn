@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[CreateAssetMenu(fileName = "SFX", menuName = "ScriptableObjects/sfxObject")]
 public class sfxObject : ScriptableObject {
     public AudioClip generalClick;
     public AudioClip failSound;

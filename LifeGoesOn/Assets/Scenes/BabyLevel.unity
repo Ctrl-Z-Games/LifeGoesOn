@@ -163,6 +163,8 @@ MonoBehaviour:
   ok: {fileID: 21300000, guid: 6e983fdb8a91d49c69fd8fe7ef9a46cd, type: 3}
   good: {fileID: 21300000, guid: 954ee31ce1c6f46589e5239a3cafaf03, type: 3}
   perfect: {fileID: 21300000, guid: fd1c9eb9281ef41c59194f8e052ced81, type: 3}
+  sfxSource: {fileID: 1727537487}
+  sfx: {fileID: 11400000, guid: f010ed9b0ba52b24a89f2319035dba44, type: 2}
   endPosition: 194
   numHappyScenes: 1
   numNeutralScenes: 3
@@ -200,7 +202,15 @@ MonoBehaviour:
   horizontalSpaceMod: 2.73
   mapFile: {fileID: 4900000, guid: c3cf4bd291343214ea4fdc94e00e3e81, type: 3}
   qHitbox: {fileID: 4404175141449542206, guid: 75017faed50b315438f8247bd3503cbb, type: 3}
+  qHeldStartbox: {fileID: 0}
+  qHeldMidbox: {fileID: 0}
+  qHeldEndbox: {fileID: 0}
+  qHeldOffsets: {x: 0, y: 0}
   pHitbox: {fileID: 0}
+  pHeldStartbox: {fileID: 0}
+  pHeldMidbox: {fileID: 0}
+  pHeldEndbox: {fileID: 0}
+  pHeldOffsets: {x: 0, y: 0}
 --- !u!212 &153780897
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1754,7 +1764,7 @@ GameObject:
   - component: {fileID: 1727537486}
   - component: {fileID: 1727537487}
   m_Layer: 0
-  m_Name: Voiceover
+  m_Name: SFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
