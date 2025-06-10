@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: e95ec6b96f8fed74abca0805ca9e4911
+guid: 34972eb01a46d4f779a052f731a57288
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4710475553559508966
-    second: SEN_PillsHeldEnd_0
+      213: 3359231053636606615
+    second: SEN_Fail4_0
+  - first:
+      213: -436473666369039917
+    second: SEN_Fail4_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,30 +99,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SEN_PillsHeldEnd_0
+      name: SEN_Fail4_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 41
-        width: 116
-        height: 61
+        x: 8
+        y: 0
+        width: 348
+        height: 331
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,8 +117,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6e7731d0f88fe5140800000000000000
-      internalID: 4710475553559508966
+      spriteID: 79a987668d26e9e20800000000000000
+      internalID: 3359231053636606615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SEN_Fail4_1
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 7
+        width: 124
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d1d242538551f9f0800000000000000
+      internalID: -436473666369039917
       vertices: []
       indices: 
       edges: []
@@ -143,8 +154,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      SEN_PillsHeldEnd_0: 4710475553559508966
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

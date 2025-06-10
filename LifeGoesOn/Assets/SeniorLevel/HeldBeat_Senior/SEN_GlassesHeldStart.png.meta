@@ -143,7 +143,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SEN_GlassesHeldStart_0: -8048141337714344267
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
