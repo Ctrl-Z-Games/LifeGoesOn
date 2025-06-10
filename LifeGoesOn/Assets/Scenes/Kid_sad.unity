@@ -276,7 +276,15 @@ MonoBehaviour:
   horizontalSpaceMod: 2.73
   mapFile: {fileID: 4900000, guid: 1e8aa0465469a7347923110c737e817a, type: 3}
   qHitbox: {fileID: 7861901813682168695, guid: d5d7431b302b2c84e8a2d9c2aa8ec06a, type: 3}
+  qHeldStartbox: {fileID: 0}
+  qHeldMidbox: {fileID: 0}
+  qHeldEndbox: {fileID: 0}
+  qHeldOffsets: {x: 0, y: 0}
   pHitbox: {fileID: 7836904469303024619, guid: 1354a271c9025884691a33106a495209, type: 3}
+  pHeldStartbox: {fileID: 0}
+  pHeldMidbox: {fileID: 0}
+  pHeldEndbox: {fileID: 0}
+  pHeldOffsets: {x: 0, y: 0}
 --- !u!114 &372468776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -301,6 +309,8 @@ MonoBehaviour:
   ok: {fileID: 21300000, guid: c053a11f4842848dd8d74987d173571a, type: 3}
   good: {fileID: 21300000, guid: 474801bd51cad4197a8d4e43e066176f, type: 3}
   perfect: {fileID: 21300000, guid: 5eb30aafd7a77426baa680d486342a66, type: 3}
+  sfxSource: {fileID: 1259404900}
+  sfx: {fileID: 11400000, guid: f010ed9b0ba52b24a89f2319035dba44, type: 2}
   endPosition: 263
   numHappyScenes: 1
   numNeutralScenes: 3
@@ -1151,7 +1161,7 @@ GameObject:
   - component: {fileID: 1259404901}
   - component: {fileID: 1259404900}
   m_Layer: 0
-  m_Name: Voiceover
+  m_Name: sfx
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

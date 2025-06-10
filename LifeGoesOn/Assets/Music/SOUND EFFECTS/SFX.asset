@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbf827eed5d16cf44a160acd38cc7761, type: 3}
+  m_Name: SFX
+  m_EditorClassIdentifier: 
+  generalClick: {fileID: 8300000, guid: b81637f476974d64ab99b25883ff751c, type: 3}
+  failSound: {fileID: 8300000, guid: 2734e0628280bd2468ca4e09b996170c, type: 3}
+  okSound: {fileID: 8300000, guid: f82be00bcccd2df41bb7a33fb329f798, type: 3}
+  goodSound: {fileID: 8300000, guid: 069646d09b01ac94d93435649a07e5de, type: 3}
+  perfectSound: {fileID: 8300000, guid: 53e4fc40fb0184a408efb5bd615512a3, type: 3}
+  startSound: {fileID: 8300000, guid: dea9377186e670a43bc5e99564a5606f, type: 3}

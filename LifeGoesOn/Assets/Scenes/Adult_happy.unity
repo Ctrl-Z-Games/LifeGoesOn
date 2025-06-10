@@ -168,7 +168,15 @@ MonoBehaviour:
   horizontalSpaceMod: 2.73
   mapFile: {fileID: 4900000, guid: f7ef2278781ecf145a10cc59e3da8c2d, type: 3}
   qHitbox: {fileID: 7428657735169004488, guid: b62ad73a8a2fa4448a74c9984b9a6416, type: 3}
+  qHeldStartbox: {fileID: 0}
+  qHeldMidbox: {fileID: 0}
+  qHeldEndbox: {fileID: 0}
+  qHeldOffsets: {x: 0, y: 0}
   pHitbox: {fileID: 4238939194598820289, guid: 2e862156fd4c28846b87312b2ea90100, type: 3}
+  pHeldStartbox: {fileID: 0}
+  pHeldMidbox: {fileID: 0}
+  pHeldEndbox: {fileID: 0}
+  pHeldOffsets: {x: 0, y: 0}
 --- !u!114 &372468776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -193,6 +201,8 @@ MonoBehaviour:
   ok: {fileID: 21300000, guid: 87a6393bd894b4462aaac8021bdc8fd7, type: 3}
   good: {fileID: 21300000, guid: f3588eb60688d4b62bbc628935232427, type: 3}
   perfect: {fileID: 21300000, guid: 191d53a3743694b4898f59ab9abb2127, type: 3}
+  sfxSource: {fileID: 745471437}
+  sfx: {fileID: 11400000, guid: f010ed9b0ba52b24a89f2319035dba44, type: 2}
   endPosition: 289
   numHappyScenes: 5
   numNeutralScenes: 7
@@ -679,7 +689,7 @@ GameObject:
   - component: {fileID: 745471438}
   - component: {fileID: 745471437}
   m_Layer: 0
-  m_Name: voiceover
+  m_Name: sfx
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -695,7 +705,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: ed72d2ee8cf0efb44853159f273c04b0, type: 3}
+  m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: ed72d2ee8cf0efb44853159f273c04b0, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1

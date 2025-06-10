@@ -29,7 +29,9 @@ public class GameManager : MonoBehaviour
     private GameObject player;
     private SpriteRenderer accSR;
     private int timer;
-    //public AudioSource voiceoverSource; 
+    public AudioSource sfxSource;
+    [SerializeField] private sfxObject sfx;
+    private float sfxVolume = 0.1f;
     //public AudioClip[] voiceoverClips; 
     //private int voiceoverIndex = 0;
     //private bool isVoiceoverPlaying = false;
@@ -160,6 +162,7 @@ public class GameManager : MonoBehaviour
         accSR.sprite = ok;
         accuracyObj.transform.position = player.transform.position + new Vector3(0f, accuracyHeight + 0.25f);
         accJuice = true;
+        sfxSource.PlayOneShot(sfx.okSound, sfxVolume * 2);
         //Debug.Log(currentScore);
     }
     public void GoodHit()
@@ -171,6 +174,7 @@ public class GameManager : MonoBehaviour
         accSR.sprite = good;
         accuracyObj.transform.position = player.transform.position + new Vector3(0f, accuracyHeight + 0.25f);
         accJuice = true;
+        sfxSource.PlayOneShot(sfx.goodSound, sfxVolume * 2);
         //Debug.Log(currentScore);
     }
     public void PerfectHit()
@@ -182,6 +186,7 @@ public class GameManager : MonoBehaviour
         accSR.sprite = perfect;
         accuracyObj.transform.position = player.transform.position + new Vector3(0f, accuracyHeight + 0.25f);
         accJuice = true;
+        sfxSource.PlayOneShot(sfx.perfectSound, sfxVolume);
         //.Log(currentScore);
     } 
     public void FailHit()
@@ -193,6 +198,7 @@ public class GameManager : MonoBehaviour
         accSR.sprite = fail;
         accuracyObj.transform.position = player.transform.position + new Vector3(0f, accuracyHeight + 0.25f);
         accJuice = true;
+        sfxSource.PlayOneShot(sfx.failSound, sfxVolume * 2);
         //Debug.Log(currentScore);
     }
 }
