@@ -481,6 +481,8 @@ MonoBehaviour:
   ok: {fileID: 21300000, guid: d3fb7a2580a784446be8058f572d31ae, type: 3}
   good: {fileID: 21300000, guid: 3beb2ac34d1e25c49a68479ac89b2b15, type: 3}
   perfect: {fileID: 21300000, guid: 2575659dc3a8931409300871e9455a4a, type: 3}
+  sfxSource: {fileID: 791309393}
+  sfx: {fileID: 11400000, guid: f010ed9b0ba52b24a89f2319035dba44, type: 2}
   endPosition: 333
   numHappyScenes: 5
   numNeutralScenes: 6
@@ -874,7 +876,7 @@ GameObject:
   - component: {fileID: 791309394}
   - component: {fileID: 791309393}
   m_Layer: 0
-  m_Name: voiceover
+  m_Name: sfx
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
