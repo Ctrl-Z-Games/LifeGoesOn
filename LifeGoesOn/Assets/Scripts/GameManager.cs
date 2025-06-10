@@ -162,7 +162,7 @@ public class GameManager : MonoBehaviour
         accSR.sprite = ok;
         accuracyObj.transform.position = player.transform.position + new Vector3(0f, accuracyHeight + 0.25f);
         accJuice = true;
-        sfxSource.PlayOneShot(sfx.okSound, sfxVolume);
+        sfxSource.PlayOneShot(sfx.okSound, sfxVolume * 2);
         //Debug.Log(currentScore);
     }
     public void GoodHit()
@@ -174,7 +174,7 @@ public class GameManager : MonoBehaviour
         accSR.sprite = good;
         accuracyObj.transform.position = player.transform.position + new Vector3(0f, accuracyHeight + 0.25f);
         accJuice = true;
-        sfxSource.PlayOneShot(sfx.goodSound, sfxVolume);
+        sfxSource.PlayOneShot(sfx.goodSound, sfxVolume * 2);
         //Debug.Log(currentScore);
     }
     public void PerfectHit()
@@ -198,7 +198,7 @@ public class GameManager : MonoBehaviour
         accSR.sprite = fail;
         accuracyObj.transform.position = player.transform.position + new Vector3(0f, accuracyHeight + 0.25f);
         accJuice = true;
-        sfxSource.PlayOneShot(sfx.failSound, sfxVolume);
+        sfxSource.PlayOneShot(sfx.failSound, sfxVolume * 2);
         //Debug.Log(currentScore);
     }
 }
