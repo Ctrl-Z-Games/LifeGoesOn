@@ -47,7 +47,7 @@ public class NoteCollision : MonoBehaviour {
             if (note.noteType / 10 == 2) { // middle held note
                 if (note.noteType - 20 == 3) { botAnimBuffer.Add(note); }
                 else if (note.noteType - 20 == 4) { topAnimBuffer.Add(note); }
-            } else if (!note.clicked && note.noteType/10 == 2) {
+            } else if (!note.clicked) {
                 GameManager.instance.FailHit();
             }
         }
