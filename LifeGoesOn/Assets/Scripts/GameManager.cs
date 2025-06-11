@@ -73,7 +73,7 @@ public class GameManager : MonoBehaviour
                 isGameActive = true;
                 player.GetComponent<autoscroll>().hasStarted = true;
                 //GetComponent<placeDialogue>().enabled = true;
-                GameObject.Find("dialog").GetComponent<Animator>().Play("dialog");
+                GameObject.Find("dialog").GetComponent<Animator>().Play("textFadeOut");
                 
                 backgroundMusic.Play();
                 
