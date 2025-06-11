@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -45,6 +46,7 @@ public class GameManager : MonoBehaviour
     public int neutralScore; // 31 for baby
 
 	public string key;
+    private TextMeshProUGUI dialogs;
 
 
     private void Awake() { // awake is called before start, and is needed in start methods
@@ -60,6 +62,7 @@ public class GameManager : MonoBehaviour
         accuracyObj.SetActive(false);
         accSR = accuracyObj.GetComponent<SpriteRenderer>();
         timer = 0;
+        dialogs = GameObject.Find("dialog").GetComponent<TextMeshProUGUI>();
         //currentScore = 0;
     }
 
@@ -73,7 +76,7 @@ public class GameManager : MonoBehaviour
                 isGameActive = true;
                 player.GetComponent<autoscroll>().hasStarted = true;
                 //GetComponent<placeDialogue>().enabled = true;
-                GameObject.Find("dialog").GetComponent<Animator>().Play("dialog");
+                //GameObject.Find("dialog").GetComponent<Animator>().Play("textFadeOut");
                 
                 backgroundMusic.Play();
                 
@@ -81,6 +84,8 @@ public class GameManager : MonoBehaviour
                 //    StartCoroutine(PlayVoiceover());
                 //}
             }
+        } else {
+            dialogs.color -= new Color(0, 0, 0, 0.01f);
         }
 
         if (timer++ == 100) {
