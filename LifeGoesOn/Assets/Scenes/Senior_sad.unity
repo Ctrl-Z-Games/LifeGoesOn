@@ -308,7 +308,7 @@ Transform:
   m_GameObject: {fileID: 372468773}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10, y: -2, z: -0.1}
+  m_LocalPosition: {x: -0.19, y: -2, z: -0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -329,15 +329,15 @@ MonoBehaviour:
   horizontalSpaceMod: 2.73
   mapFile: {fileID: 4900000, guid: f2835f828399fb24b9e183903e1d9ef1, type: 3}
   qHitbox: {fileID: 6575264238930843259, guid: 46730dbd947174e05b46db5e81d788a8, type: 3}
-  qHeldStartbox: {fileID: 0}
-  qHeldMidbox: {fileID: 0}
-  qHeldEndbox: {fileID: 0}
-  qHeldOffsets: {x: 0, y: 0}
+  qHeldStartbox: {fileID: 4814857505291847719, guid: 4a739e055e1c21b48afc9d3b6495bfc6, type: 3}
+  qHeldMidbox: {fileID: 8092987786629119368, guid: 631fcd5157f2a6f41a5640b55796da84, type: 3}
+  qHeldEndbox: {fileID: 8544780046359344911, guid: 64640d93ccca6e8499dbfd116299d640, type: 3}
+  qHeldOffsets: {x: 0.36, y: -0.36}
   pHitbox: {fileID: 3686304191074580584, guid: 09dc2a09242334bf6abb6969c6f81b5c, type: 3}
-  pHeldStartbox: {fileID: 0}
-  pHeldMidbox: {fileID: 0}
-  pHeldEndbox: {fileID: 0}
-  pHeldOffsets: {x: 0, y: 0}
+  pHeldStartbox: {fileID: 8964986150352453375, guid: a46f797a37552b9498e00d5181dc70a9, type: 3}
+  pHeldMidbox: {fileID: 9106892280648308103, guid: 6fe44f21228d7d2418146bff9290c0bf, type: 3}
+  pHeldEndbox: {fileID: 548818877938077495, guid: 8ba86a3ff045bc146afff08550461b3b, type: 3}
+  pHeldOffsets: {x: 0.29, y: -0.29}
 --- !u!114 &372468776
 MonoBehaviour:
   m_ObjectHideFlags: 0
